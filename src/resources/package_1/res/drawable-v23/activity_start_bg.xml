@@ -1,0 +1,9 @@
+<?xml version='1.0' encoding='utf-8' ?>
+<layer-list xmlns:android="http://schemas.android.com/apk/res/android">
+  <item android:drawable="@color/white" />
+  <item android:drawable="@drawable/activity_start_top"
+        android:bottom="90.0dp" />
+  <item android:gravity="bottom"
+        android:height="90.0dp"
+        android:drawable="@drawable/activity_start_bottom" />
+</layer-list>

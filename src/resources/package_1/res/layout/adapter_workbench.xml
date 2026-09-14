@@ -1,0 +1,19 @@
+<?xml version='1.0' encoding='utf-8' ?>
+<LinearLayout android:orientation="vertical"
+              android:layout_width="wrap_content"
+              android:layout_height="wrap_content" xmlns:android="http://schemas.android.com/apk/res/android" xmlns:kingdraw="http://schemas.android.com/apk/res-auto">
+  <ImageView android:layout_gravity="center"
+             android:id="@id/iv_work_item"
+             android:background="@drawable/bg_radius_yellow_10"
+             android:layout_width="wrap_content"
+             android:layout_height="wrap_content"
+             kingdraw:srcCompat="@drawable/ic_work_template" />
+  <TextView android:textSize="12.0sp"
+            android:textColor="#ff666666"
+            android:gravity="center"
+            android:layout_gravity="center"
+            android:id="@id/tv_work_name"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="5.0dp" />
+</LinearLayout>

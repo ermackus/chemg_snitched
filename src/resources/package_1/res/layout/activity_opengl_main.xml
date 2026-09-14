@@ -1,0 +1,51 @@
+<?xml version='1.0' encoding='utf-8' ?>
+<LinearLayout android:orientation="horizontal"
+              android:layout_width="fill_parent"
+              android:layout_height="fill_parent" xmlns:android="http://schemas.android.com/apk/res/android" xmlns:kingdraw="http://schemas.android.com/apk/res-auto">
+  <FrameLayout android:id="@id/frame"
+               android:layout_width="fill_parent"
+               android:layout_height="fill_parent">
+    <com.kingagroot.kingdraw.core.view3d.Chem3DView android:id="@id/chem_3dview"
+                          android:layout_width="fill_parent"
+                          android:layout_height="fill_parent" />
+    <RadioGroup android:orientation="horizontal"
+                android:background="@drawable/bg_3d_model"
+                android:layout_width="wrap_content"
+                android:layout_height="40.0dp"
+                android:layout_marginTop="10.0dp"
+                android:layout_marginStart="20.0dp">
+      <RadioButton android:id="@id/rbt_model_sphere"
+                   android:background="@drawable/rbt_sphere_selector"
+                   android:layout_width="40.0dp"
+                   android:layout_height="40.0dp"
+                   android:button="@null" />
+      <RadioButton android:id="@id/rbt_model_stick"
+                   android:background="@drawable/rbt_stick_selector"
+                   android:layout_width="40.0dp"
+                   android:layout_height="40.0dp"
+                   android:button="@null" />
+      <RadioButton android:id="@id/rbt_model_club"
+                   android:background="@drawable/rbt_club_selector"
+                   android:layout_width="40.0dp"
+                   android:layout_height="40.0dp"
+                   android:button="@null" />
+    </RadioGroup>
+    <ImageButton android:layout_gravity="end"
+                 android:id="@id/btn_close"
+                 android:background="@null"
+                 android:layout_width="40.0dp"
+                 android:layout_height="40.0dp"
+                 android:layout_marginTop="10.0dp"
+                 android:layout_marginEnd="20.0dp"
+                 kingdraw:srcCompat="@drawable/ic_btn_close_white" />
+    <com.google.android.material.floatingactionbutton.FloatingActionButton android:layout_gravity="bottom|center|end"
+                          android:id="@id/fab_more"
+                          android:layout_width="wrap_content"
+                          android:layout_height="wrap_content"
+                          android:layout_margin="20.0dp"
+                          kingdraw:backgroundTint="#88ffffff"
+                          kingdraw:fabSize="mini"
+                          kingdraw:rippleColor="#eeffffff"
+                          kingdraw:srcCompat="@drawable/ic_baseline_more_horiz_24" />
+  </FrameLayout>
+</LinearLayout>

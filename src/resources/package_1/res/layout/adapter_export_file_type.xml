@@ -1,0 +1,26 @@
+<?xml version='1.0' encoding='utf-8' ?>
+<LinearLayout android:gravity="center_vertical"
+              android:orientation="horizontal"
+              android:descendantFocusability="blocksDescendants"
+              android:layout_width="fill_parent"
+              android:layout_height="wrap_content" xmlns:android="http://schemas.android.com/apk/res/android">
+  <TextView android:textSize="18.0sp"
+            android:textColor="#de000000"
+            android:gravity="center"
+            android:layout_gravity="center_vertical"
+            android:id="@id/tv_format"
+            android:paddingLeft="6.0dp"
+            android:layout_width="wrap_content"
+            android:layout_height="38.0dp"
+            android:text="@string/format_kdx" />
+  <TextView android:textSize="12.0sp"
+            android:textColor="#de000000"
+            android:gravity="center"
+            android:layout_gravity="center_vertical"
+            android:id="@id/tv_versionName"
+            android:paddingLeft="4.0dp"
+            android:paddingTop="2.0dp"
+            android:layout_width="wrap_content"
+            android:layout_height="38.0dp"
+            android:text="V3000" />
+</LinearLayout>

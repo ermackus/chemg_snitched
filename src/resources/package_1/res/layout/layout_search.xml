@@ -1,0 +1,39 @@
+<?xml version='1.0' encoding='utf-8' ?>
+<FrameLayout android:layout_width="fill_parent"
+             android:layout_height="50.0dp" xmlns:android="http://schemas.android.com/apk/res/android" xmlns:kingdraw="http://schemas.android.com/apk/res-auto">
+  <LinearLayout android:orientation="horizontal"
+                android:id="@id/ll_title"
+                android:layout_width="fill_parent"
+                android:layout_height="fill_parent">
+    <TextView android:textSize="18.0sp"
+              android:textColor="@android:color/black"
+              android:ellipsize="end"
+              android:gravity="center_vertical"
+              android:id="@id/tv_title"
+              android:padding="5.0dp"
+              android:layout_width="0.0dp"
+              android:layout_height="fill_parent"
+              android:maxLines="1"
+              android:layout_weight="1.0" />
+    <ImageButton android:id="@id/imgbtn_search"
+                 android:background="@null"
+                 android:paddingLeft="10.0dp"
+                 android:paddingRight="10.0dp"
+                 android:layout_width="wrap_content"
+                 android:layout_height="fill_parent"
+                 kingdraw:srcCompat="@drawable/ic_search_black_24dp" />
+  </LinearLayout>
+  <EditText android:textSize="14.0sp"
+            android:gravity="center|left"
+            android:id="@id/et_search"
+            android:paddingLeft="5.0dp"
+            android:paddingTop="5.0dp"
+            android:paddingRight="10.0dp"
+            android:paddingBottom="5.0dp"
+            android:visibility="gone"
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent"
+            android:maxLines="1"
+            android:drawableLeft="@0x7f0802d9"
+            android:drawablePadding="5.0dp" />
+</FrameLayout>

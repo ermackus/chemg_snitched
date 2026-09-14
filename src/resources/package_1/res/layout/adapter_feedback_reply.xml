@@ -1,0 +1,50 @@
+<?xml version='1.0' encoding='utf-8' ?>
+<FrameLayout android:orientation="horizontal"
+             android:background="@color/white"
+             android:layout_width="fill_parent"
+             android:layout_height="wrap_content"
+             android:layout_margin="8.0dp" xmlns:android="http://schemas.android.com/apk/res/android" xmlns:kingdraw="http://schemas.android.com/apk/res-auto">
+  <ImageView android:layout_width="wrap_content"
+             android:layout_height="wrap_content"
+             android:layout_margin="8.0dp"
+             android:contentDescription="@string/user_img"
+             kingdraw:srcCompat="@0x7f08012f" />
+  <LinearLayout android:orientation="vertical"
+                android:layout_width="fill_parent"
+                android:layout_height="fill_parent"
+                android:layout_marginLeft="50.0dp"
+                android:layout_marginStart="50.0dp">
+    <TextView android:textSize="14.0sp"
+              android:textStyle="bold"
+              android:textColor="@color/black"
+              android:id="@id/tv_feedback_user"
+              android:layout_width="wrap_content"
+              android:layout_height="wrap_content"
+              android:layout_marginTop="8.0dp" />
+    <TextView android:textSize="10.0sp"
+              android:textColor="#999999"
+              android:id="@id/tv_feedback_time"
+              android:layout_width="wrap_content"
+              android:layout_height="wrap_content"
+              android:layout_marginTop="3.0dp" />
+    <TextView android:textSize="12.0sp"
+              android:textColor="#333333"
+              android:textColorLink="#0058ff"
+              android:ellipsize="end"
+              android:id="@id/tv_feedback_content"
+              android:layout_width="wrap_content"
+              android:layout_height="wrap_content"
+              android:layout_marginTop="5.0dp"
+              android:layout_marginRight="10.0dp"
+              android:textIsSelectable="true"
+              android:layout_marginEnd="10.0dp" />
+    <com.kingagroot.kingdraw.widget.FeedBackPicView android:id="@id/fpv_img"
+                          android:layout_width="fill_parent"
+                          android:layout_height="wrap_content"
+                          android:layout_marginTop="3.0dp"
+                          android:layout_marginRight="10.0dp"
+                          android:layout_marginEnd="10.0dp" />
+    <View android:layout_marginTop="8.0dp"
+          style="@style/hline" />
+  </LinearLayout>
+</FrameLayout>

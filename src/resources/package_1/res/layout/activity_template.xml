@@ -1,0 +1,61 @@
+<?xml version='1.0' encoding='utf-8' ?>
+<LinearLayout android:orientation="vertical"
+              android:layout_width="fill_parent"
+              android:layout_height="fill_parent" xmlns:android="http://schemas.android.com/apk/res/android" xmlns:kingdraw="http://schemas.android.com/apk/res-auto">
+  <RelativeLayout android:layout_width="fill_parent"
+                  android:layout_height="45.0dp"
+                  android:paddingStart="10.0dp"
+                  android:paddingEnd="10.0dp">
+    <LinearLayout android:layout_width="fill_parent"
+                  android:layout_height="fill_parent"
+                  android:layout_toStartOf="@id/ll_operation">
+      <ImageButton android:layout_gravity="center|start"
+                   android:id="@id/ibt_back"
+                   android:background="@android:color/transparent"
+                   android:visibility="gone"
+                   android:layout_width="wrap_content"
+                   android:layout_height="wrap_content"
+                   kingdraw:srcCompat="@drawable/ic_nav_back" />
+      <TextView android:textSize="17.0sp"
+                android:textColor="@color/black"
+                android:ellipsize="end"
+                android:gravity="center|start"
+                android:layout_gravity="center"
+                android:id="@id/tv_template_title"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:lines="1"
+                android:layout_marginStart="10.0dp"
+                android:layout_marginEnd="10.0dp" />
+    </LinearLayout>
+    <LinearLayout android:orientation="horizontal"
+                  android:id="@id/ll_operation"
+                  android:background="@drawable/bg_round_color_white_radius_50"
+                  android:layout_width="wrap_content"
+                  android:layout_height="wrap_content"
+                  android:layout_centerVertical="true"
+                  android:paddingStart="10.0dp"
+                  android:paddingEnd="10.0dp"
+                  android:layout_alignParentEnd="true">
+      <ImageButton android:id="@id/ibt_template_hide"
+                   android:background="?android:attr/selectableItemBackgroundBorderless"
+                   android:layout_width="wrap_content"
+                   android:layout_height="wrap_content"
+                   android:layout_margin="5.0dp"
+                   kingdraw:srcCompat="@drawable/ic_pedia_hide" />
+      <View android:layout_gravity="center"
+            android:background="#33000000"
+            android:layout_width="1.0dp"
+            android:layout_height="20.0dp" />
+      <ImageButton android:id="@id/ibt_template_close"
+                   android:background="?android:attr/selectableItemBackgroundBorderless"
+                   android:layout_width="wrap_content"
+                   android:layout_height="wrap_content"
+                   android:layout_margin="5.0dp"
+                   kingdraw:srcCompat="@drawable/ic_pedia_close" />
+    </LinearLayout>
+  </RelativeLayout>
+  <FrameLayout android:id="@id/fl_web"
+               android:layout_width="fill_parent"
+               android:layout_height="fill_parent" />
+</LinearLayout>

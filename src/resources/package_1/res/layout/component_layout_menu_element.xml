@@ -1,0 +1,37 @@
+<?xml version='1.0' encoding='utf-8' ?>
+<LinearLayout android:gravity="center_horizontal"
+              android:orientation="horizontal"
+              android:layout_width="wrap_content"
+              android:layout_height="fill_parent" xmlns:android="http://schemas.android.com/apk/res/android" xmlns:kingdraw="http://schemas.android.com/apk/res-auto">
+  <LinearLayout android:orientation="vertical"
+                android:id="@id/ll_content"
+                android:background="@drawable/func_left_bg"
+                android:layout_width="45.0dp"
+                android:layout_height="fill_parent">
+    <ScrollView android:id="@id/scrollview"
+                android:scrollbars="none"
+                android:layout_width="fill_parent"
+                android:layout_height="0.0dp"
+                android:layout_weight="1.0">
+      <RadioGroup android:id="@id/rg_element"
+                  android:layout_width="fill_parent"
+                  android:layout_height="fill_parent" />
+    </ScrollView>
+    <com.kingagroot.component.ui.view.GRadioButton android:id="@id/rbt_element_table"
+                          android:layout_width="@dimen/home_tool_height"
+                          android:layout_height="@dimen/home_tool_height"
+                          kingdraw:CornerWidth="8.0dp"
+                          kingdraw:VectorDrawable="@drawable/ic_element_more"
+                          style="@style/Home_RadioButton" />
+  </LinearLayout>
+  <androidx.appcompat.widget.AppCompatCheckBox android:gravity="center"
+                        android:layout_gravity="center_vertical"
+                        android:id="@id/cb_direction"
+                        android:background="@drawable/checkbox_left_bg_selector"
+                        android:padding="8.0dp"
+                        android:layout_width="28.0dp"
+                        android:layout_height="48.0dp"
+                        android:button="@null"
+                        android:drawableLeft="@drawable/checkbox_triangle_selector"
+                        style="@style/CheckBox__NoButton" />
+</LinearLayout>

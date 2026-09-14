@@ -1,0 +1,54 @@
+<?xml version='1.0' encoding='utf-8' ?>
+<LinearLayout android:orientation="vertical"
+              android:background="@android:color/white"
+              android:layout_width="fill_parent"
+              android:layout_height="wrap_content" xmlns:android="http://schemas.android.com/apk/res/android">
+  <LinearLayout android:orientation="vertical"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="8.0dp"
+                android:layout_marginRight="8.0dp"
+                android:layout_marginBottom="8.0dp"
+                android:foreground="?attr/selectableItemBackground"
+                android:minHeight="50.0dp">
+    <RelativeLayout android:background="@drawable/shape_top_edit"
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content">
+      <ImageView android:id="@id/img_editor"
+                 android:layout_width="fill_parent"
+                 android:layout_height="wrap_content"
+                 android:layout_margin="10.0dp"
+                 android:scaleType="fitCenter"
+                 android:adjustViewBounds="true"
+                 android:layout_centerHorizontal="true"
+                 android:layout_centerVertical="true" />
+    </RelativeLayout>
+    <LinearLayout android:orientation="vertical"
+                  android:background="@drawable/shape_bottom_edit"
+                  android:layout_width="fill_parent"
+                  android:layout_height="fill_parent">
+      <TextView android:textSize="16.0sp"
+                android:textColor="#ff000000"
+                android:ellipsize="end"
+                android:gravity="left"
+                android:id="@id/tv_editor_title"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="10.0dp"
+                android:layout_marginTop="8.0dp"
+                android:layout_marginRight="10.0dp"
+                android:text="方向芬的化合反应加长版名称加长加再加长再加长再加长再加   长再.king"
+                android:lines="1" />
+      <TextView android:textSize="12.0sp"
+                android:textColor="#ff767676"
+                android:id="@id/tv_editor_date"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="10.0dp"
+                android:layout_marginTop="8.0dp"
+                android:layout_marginRight="10.0dp"
+                android:layout_marginBottom="8.0dp"
+                android:text="2017-11-09  12:22" />
+    </LinearLayout>
+  </LinearLayout>
+</LinearLayout>

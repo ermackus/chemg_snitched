@@ -1,0 +1,62 @@
+<?xml version='1.0' encoding='utf-8' ?>
+<LinearLayout android:orientation="vertical"
+              android:layout_width="fill_parent"
+              android:layout_height="fill_parent" xmlns:android="http://schemas.android.com/apk/res/android">
+  <TextView android:text="@string/setting_usual_hint"
+            style="@style/Setting_tv_out" />
+  <LinearLayout android:orientation="vertical"
+                android:background="@color/white"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content">
+    <LinearLayout style="@style/Setting_layout">
+      <TextView android:text="@string/bond_check"
+                style="@style/Setting_tv_in" />
+      <androidx.appcompat.widget.SwitchCompat android:id="@id/switch_check"
+                            android:layout_width="0.0dp"
+                            android:layout_height="fill_parent"
+                            android:checked="true"
+                            android:layout_weight="0.3"
+                            android:paddingEnd="15.0dp" />
+    </LinearLayout>
+    <View android:layout_marginStart="15.0dp"
+          style="@style/hline" />
+    <LinearLayout style="@style/Setting_layout">
+      <TextView android:text="@string/magnifier"
+                style="@style/Setting_tv_in" />
+      <androidx.appcompat.widget.SwitchCompat android:id="@id/switch_loupe"
+                            android:layout_width="0.0dp"
+                            android:layout_height="fill_parent"
+                            android:checked="true"
+                            android:layout_weight="0.3"
+                            android:paddingEnd="15.0dp" />
+    </LinearLayout>
+  </LinearLayout>
+  <TextView android:text="@string/draw_setting_title"
+            style="@style/Setting_tv_out" />
+  <LinearLayout android:layout_height="wrap_content"
+                android:minHeight="40.0dp"
+                style="@style/Setting_layout">
+    <LinearLayout android:layout_gravity="center_vertical"
+                  android:orientation="vertical"
+                  android:layout_width="0.0dp"
+                  android:layout_height="wrap_content"
+                  android:layout_weight="0.7"
+                  android:paddingStart="15.0dp">
+      <TextView android:textSize="14.0sp"
+                android:textColor="#484848"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/default_atom_color" />
+      <TextView android:textSize="12.0sp"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/default_atom_color_hint" />
+    </LinearLayout>
+    <androidx.appcompat.widget.SwitchCompat android:id="@id/switch_color"
+                          android:layout_width="0.0dp"
+                          android:layout_height="fill_parent"
+                          android:checked="true"
+                          android:layout_weight="0.3"
+                          android:paddingEnd="15.0dp" />
+  </LinearLayout>
+</LinearLayout>

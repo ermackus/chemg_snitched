@@ -1,0 +1,52 @@
+<?xml version='1.0' encoding='utf-8' ?>
+<LinearLayout android:orientation="vertical"
+              android:layout_width="wrap_content"
+              android:layout_height="wrap_content" xmlns:android="http://schemas.android.com/apk/res/android" xmlns:kingdraw="http://schemas.android.com/apk/res-auto">
+  <androidx.cardview.widget.CardView android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_margin="3.0dp"
+                        kingdraw:cardBackgroundColor="@android:color/white"
+                        kingdraw:cardCornerRadius="0.0dp"
+                        kingdraw:cardElevation="3.0dp">
+    <LinearLayout android:orientation="vertical"
+                  android:layout_width="160.0dp"
+                  android:layout_height="wrap_content">
+      <LinearLayout android:orientation="horizontal"
+                    android:id="@id/ll_list_mode"
+                    android:layout_width="fill_parent"
+                    android:layout_height="40.0dp"
+                    style="@style/Widget.AppCompat.ActionButton">
+        <ImageView android:layout_gravity="center_vertical"
+                   android:id="@id/img_mode"
+                   android:layout_width="20.0dp"
+                   android:layout_height="20.0dp"
+                   android:layout_marginRight="5.0dp"
+                   kingdraw:srcCompat="@drawable/ic_menu_btn_view" />
+        <TextView android:textColor="@android:color/black"
+                  android:gravity="center_vertical"
+                  android:id="@id/tv_mode"
+                  android:layout_width="0.0dp"
+                  android:layout_height="40.0dp"
+                  android:text="@string/preview_mode"
+                  android:layout_weight="1.0" />
+      </LinearLayout>
+      <LinearLayout android:id="@id/ll_batch_operate"
+                    android:layout_width="fill_parent"
+                    android:layout_height="40.0dp"
+                    style="@style/Widget.AppCompat.ActionButton">
+        <ImageView android:layout_gravity="center_vertical"
+                   android:layout_width="18.0dp"
+                   android:layout_height="19.0dp"
+                   android:layout_marginRight="7.0dp"
+                   kingdraw:srcCompat="@drawable/ic_menu_btn_deal_bulk" />
+        <TextView android:textColor="@android:color/black"
+                  android:gravity="center_vertical"
+                  android:layout_width="0.0dp"
+                  android:layout_height="40.0dp"
+                  android:text="@string/batch_operate"
+                  android:singleLine="true"
+                  android:layout_weight="1.0" />
+      </LinearLayout>
+    </LinearLayout>
+  </androidx.cardview.widget.CardView>
+</LinearLayout>

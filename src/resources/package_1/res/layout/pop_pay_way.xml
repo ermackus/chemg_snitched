@@ -1,0 +1,46 @@
+<?xml version='1.0' encoding='utf-8' ?>
+<RelativeLayout android:orientation="vertical"
+                android:background="#66000000"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content" xmlns:android="http://schemas.android.com/apk/res/android">
+  <LinearLayout android:orientation="vertical"
+                android:id="@id/ll_pop"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="15.0dp"
+                android:layout_marginRight="15.0dp"
+                android:layout_alignParentBottom="true">
+    <Button android:textColor="@android:color/holo_green_dark"
+            android:id="@id/btn_google"
+            android:background="@drawable/bg_file_tag_top"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:text="Google Pay" />
+    <View android:background="@color/line"
+          android:layout_width="fill_parent"
+          android:layout_height="1.0dp" />
+    <Button android:textColor="@android:color/holo_green_dark"
+            android:id="@id/btn_wechat"
+            android:background="@color/white"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:text="微信支付" />
+    <View android:background="@color/line"
+          android:layout_width="fill_parent"
+          android:layout_height="1.0dp" />
+    <Button android:textColor="@android:color/holo_green_dark"
+            android:id="@id/btn_ali"
+            android:background="@drawable/bg_file_tag_bouttom"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:text="支付宝支付" />
+    <Button android:textColor="@android:color/holo_green_dark"
+            android:id="@id/btn_pay_cancel"
+            android:background="@drawable/bg_radius_all_white_10"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10.0dp"
+            android:layout_marginBottom="15.0dp"
+            android:text="取消" />
+  </LinearLayout>
+</RelativeLayout>

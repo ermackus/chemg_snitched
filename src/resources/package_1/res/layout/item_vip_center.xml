@@ -1,0 +1,21 @@
+<?xml version='1.0' encoding='utf-8' ?>
+<LinearLayout android:orientation="vertical"
+              android:layout_width="wrap_content"
+              android:layout_height="wrap_content" xmlns:android="http://schemas.android.com/apk/res/android">
+  <ImageView android:layout_gravity="center"
+             android:id="@id/iv_vip_center_pic"
+             android:layout_width="wrap_content"
+             android:layout_height="wrap_content"
+             android:layout_margin="6.0dp"
+             android:scaleType="fitCenter"
+             android:minWidth="34.0dp"
+             android:minHeight="34.0dp" />
+  <TextView android:textSize="12.0sp"
+            android:textColor="#ff703b2b"
+            android:ellipsize="end"
+            android:layout_gravity="center"
+            android:id="@id/tv_vip_center_name"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:lines="1" />
+</LinearLayout>

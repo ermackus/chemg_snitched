@@ -1,0 +1,16 @@
+<?xml version='1.0' encoding='utf-8' ?>
+<vector android:height="60.0dp"
+        android:width="60.0dp"
+        android:viewportWidth="60.0"
+        android:viewportHeight="60.0" xmlns:android="http://schemas.android.com/apk/res/android" xmlns:aapt="http://schemas.android.com/aapt">
+  <path android:fillColor="@drawable/$ic_login_logo_cicle__0"
+        android:pathData="M21,0L39,0A21,21 0,0 1,60 21L60,39A21,21 0,0 1,39 60L21,60A21,21 0,0 1,0 39L0,21A21,21 0,0 1,21 0z" />
+  <path android:fillColor="#fff"
+        android:pathData="M10.382,41.047v-23.4l19.619,-11.7 19.62,11.7v23.4l-19.62,11.7ZM47.545,39.809L47.545,18.888L30.002,8.425 12.458,18.888v20.923l17.544,10.461Z" />
+  <path android:fillColor="#fff"
+        android:pathData="M15.108,20.411h2.02v17.874h-2.02z" />
+  <path android:fillColor="#fff"
+        android:pathData="M44.385,36.665l1.01,1.7494l-15.48,8.9378l-1.01,-1.7494z" />
+  <path android:fillColor="#fff"
+        android:pathData="M45.395,20.2l-1.01,1.7494l-15.48,-8.9378l1.01,-1.7494z" />
+</vector>

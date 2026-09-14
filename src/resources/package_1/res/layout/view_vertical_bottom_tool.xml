@@ -1,0 +1,12 @@
+<?xml version='1.0' encoding='utf-8' ?>
+<LinearLayout android:background="#f7f7f7"
+              android:layout_width="fill_parent"
+              android:layout_height="wrap_content" xmlns:android="http://schemas.android.com/apk/res/android">
+  <GridView android:gravity="center"
+            android:id="@id/gv_bottom_tool"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:numColumns="7"
+            android:paddingStart="16.0dp"
+            android:paddingEnd="16.0dp" />
+</LinearLayout>

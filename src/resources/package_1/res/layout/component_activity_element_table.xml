@@ -1,0 +1,85 @@
+<?xml version='1.0' encoding='utf-8' ?>
+<LinearLayout android:layout_width="fill_parent"
+              android:layout_height="fill_parent" xmlns:android="http://schemas.android.com/apk/res/android" xmlns:kingdraw="http://schemas.android.com/apk/res-auto">
+  <androidx.drawerlayout.widget.DrawerLayout android:orientation="vertical"
+                        android:id="@id/drawerlayout"
+                        android:background="@android:color/white"
+                        android:layout_width="fill_parent"
+                        android:layout_height="fill_parent">
+    <FrameLayout android:id="@id/frame"
+                 android:layout_width="fill_parent"
+                 android:layout_height="fill_parent">
+      <LinearLayout android:orientation="vertical"
+                    android:layout_width="fill_parent"
+                    android:layout_height="fill_parent">
+        <RelativeLayout android:background="@android:color/white"
+                        android:layout_width="fill_parent"
+                        android:layout_height="wrap_content">
+          <ImageButton android:id="@id/ibt_close"
+                       android:background="@null"
+                       android:layout_width="42.0dp"
+                       android:layout_height="42.0dp"
+                       kingdraw:srcCompat="@drawable/ic_nav_btn_close" />
+          <TextView android:textSize="18.0sp"
+                    android:textColor="@android:color/black"
+                    android:id="@id/tv1"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="20.0dp"
+                    android:text="@string/periodic_table_title"
+                    android:layout_centerHorizontal="true" />
+          <TextView android:textSize="12.0sp"
+                    android:textColor="#666666"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="3.0dp"
+                    android:text="@string/periodic_table_subtitle"
+                    android:layout_below="@id/tv1"
+                    android:layout_centerHorizontal="true" />
+          <ImageButton android:id="@id/ibt_right"
+                       android:background="@drawable/menu_list_selector"
+                       android:layout_width="42.0dp"
+                       android:layout_height="42.0dp"
+                       android:layout_marginEnd="10.0dp"
+                       android:layout_alignParentEnd="true" />
+        </RelativeLayout>
+        <com.kingagroot.component.ui.widget.periodictable.HVScrollView android:id="@id/hvScrollView"
+                              android:background="@android:color/white"
+                              android:layout_width="fill_parent"
+                              android:layout_height="fill_parent">
+          <com.kingagroot.component.ui.view.FullLinearLayout android:gravity="center_horizontal"
+                                android:orientation="vertical"
+                                android:padding="10.0dp"
+                                android:layout_width="fill_parent"
+                                android:layout_height="fill_parent">
+            <GridView android:layout_gravity="center_horizontal"
+                      android:id="@id/gv_top"
+                      android:layout_width="914.0dp"
+                      android:layout_height="wrap_content"
+                      android:listSelector="@android:color/transparent"
+                      android:horizontalSpacing="@dimen/element_table_spacing"
+                      android:verticalSpacing="@dimen/element_table_spacing"
+                      android:stretchMode="none"
+                      android:columnWidth="@dimen/element_table_size"
+                      android:numColumns="18" />
+            <GridView android:layout_gravity="center_horizontal"
+                      android:id="@id/gv_bottom"
+                      android:layout_width="914.0dp"
+                      android:layout_height="wrap_content"
+                      android:layout_marginTop="10.0dp"
+                      android:listSelector="@android:color/transparent"
+                      android:horizontalSpacing="@dimen/element_table_spacing"
+                      android:verticalSpacing="@dimen/element_table_spacing"
+                      android:stretchMode="none"
+                      android:columnWidth="@dimen/element_table_size"
+                      android:numColumns="18" />
+          </com.kingagroot.component.ui.view.FullLinearLayout>
+        </com.kingagroot.component.ui.widget.periodictable.HVScrollView>
+      </LinearLayout>
+    </FrameLayout>
+    <com.kingagroot.component.ui.widget.periodictable.NavPeriodicCollectView android:layout_gravity="center|right"
+                          android:id="@id/nav_collect"
+                          android:layout_width="220.0dp"
+                          android:layout_height="fill_parent" />
+  </androidx.drawerlayout.widget.DrawerLayout>
+</LinearLayout>

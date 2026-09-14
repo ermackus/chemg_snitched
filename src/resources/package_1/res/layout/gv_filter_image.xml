@@ -1,0 +1,18 @@
+<?xml version='1.0' encoding='utf-8' ?>
+<com.luck.picture.lib.widget.SquareRelativeLayout android:gravity="center_vertical"
+                      android:layout_width="fill_parent"
+                      android:layout_height="wrap_content" xmlns:android="http://schemas.android.com/apk/res/android">
+  <ImageView android:id="@id/iv_fiv"
+             android:layout_width="fill_parent"
+             android:layout_height="fill_parent" />
+  <ImageView android:id="@id/iv_del"
+             android:paddingLeft="10.0dp"
+             android:paddingBottom="10.0dp"
+             android:visibility="gone"
+             android:layout_width="wrap_content"
+             android:layout_height="wrap_content"
+             android:src="@drawable/btn_del_selector"
+             android:scaleType="centerInside"
+             android:layout_alignTop="@id/iv_fiv"
+             android:layout_alignRight="@id/iv_fiv" />
+</com.luck.picture.lib.widget.SquareRelativeLayout>

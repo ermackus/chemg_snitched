@@ -1,0 +1,68 @@
+<?xml version='1.0' encoding='utf-8' ?>
+<FrameLayout android:layout_width="fill_parent"
+             android:layout_height="fill_parent" xmlns:android="http://schemas.android.com/apk/res/android" xmlns:kingdraw="http://schemas.android.com/apk/res-auto">
+  <com.otaliastudios.cameraview.CameraView android:id="@id/camera"
+                        android:layout_width="fill_parent"
+                        android:layout_height="fill_parent"
+                        android:keepScreenOn="true"
+                        kingdraw:cameraAudio="off"
+                        kingdraw:cameraEngine="camera2"
+                        kingdraw:cameraFacing="back"
+                        kingdraw:cameraFlash="auto"
+                        kingdraw:cameraFrameProcessingExecutors="1"
+                        kingdraw:cameraFrameProcessingPoolSize="2"
+                        kingdraw:cameraGesturePinch="zoom"
+                        kingdraw:cameraGestureTap="autoFocus"
+                        kingdraw:cameraPictureFormat="jpeg"
+                        kingdraw:cameraPlaySounds="true"
+                        kingdraw:cameraPreview="glSurface" />
+  <LinearLayout android:layout_gravity="bottom"
+                android:orientation="horizontal"
+                android:id="@id/ll_state_preview"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="10.0dp"
+                android:weightSum="3.0">
+    <RelativeLayout android:layout_gravity="center"
+                    android:layout_width="0.0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1.0">
+      <ImageButton android:id="@id/ibt_photo_back"
+                   android:background="@android:color/transparent"
+                   android:layout_width="wrap_content"
+                   android:layout_height="wrap_content"
+                   android:layout_centerInParent="true"
+                   kingdraw:srcCompat="@drawable/ic_photo_back_nor" />
+    </RelativeLayout>
+    <RelativeLayout android:layout_gravity="center"
+                    android:layout_width="0.0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1.0">
+      <FrameLayout android:background="@android:color/transparent"
+                   android:layout_width="wrap_content"
+                   android:layout_height="wrap_content"
+                   android:layout_centerInParent="true">
+        <View android:layout_gravity="center_horizontal"
+              android:background="@drawable/ic_round_border"
+              android:layout_width="60.0dp"
+              android:layout_height="60.0dp" />
+        <Button android:layout_gravity="center"
+                android:id="@id/btn_take_photo"
+                android:background="@drawable/ic_round_button"
+                android:layout_width="45.0dp"
+                android:layout_height="45.0dp" />
+      </FrameLayout>
+    </RelativeLayout>
+    <RelativeLayout android:layout_gravity="center"
+                    android:layout_width="0.0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1.0">
+      <ImageButton android:id="@id/ibt_photo_album"
+                   android:background="@android:color/transparent"
+                   android:layout_width="wrap_content"
+                   android:layout_height="wrap_content"
+                   android:layout_centerInParent="true"
+                   kingdraw:srcCompat="@drawable/ic_photo_img_nor" />
+    </RelativeLayout>
+  </LinearLayout>
+</FrameLayout>

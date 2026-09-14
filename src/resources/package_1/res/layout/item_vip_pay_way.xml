@@ -1,0 +1,22 @@
+<?xml version='1.0' encoding='utf-8' ?>
+<RelativeLayout android:id="@id/rl_item_pay_way"
+                android:background="@drawable/bg_white_round_shadow_5"
+                android:layout_width="165.0dp"
+                android:layout_height="wrap_content" xmlns:android="http://schemas.android.com/apk/res/android">
+  <LinearLayout android:orientation="horizontal"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerInParent="true">
+    <ImageView android:layout_gravity="center"
+               android:id="@id/iv_vip_pay_way_pic"
+               android:layout_width="22.0dp"
+               android:layout_height="22.0dp"
+               android:layout_margin="6.0dp" />
+    <TextView android:textSize="13.0sp"
+              android:textColor="#ff333333"
+              android:layout_gravity="center"
+              android:id="@id/tv_vip_pay_way_name"
+              android:layout_width="wrap_content"
+              android:layout_height="wrap_content" />
+  </LinearLayout>
+</RelativeLayout>

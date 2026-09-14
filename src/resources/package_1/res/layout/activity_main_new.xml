@@ -1,0 +1,57 @@
+<?xml version='1.0' encoding='utf-8' ?>
+<androidx.constraintlayout.widget.ConstraintLayout android:layout_width="fill_parent"
+                      android:layout_height="fill_parent" xmlns:android="http://schemas.android.com/apk/res/android" xmlns:kingdraw="http://schemas.android.com/apk/res-auto">
+  <LinearLayout android:orientation="vertical"
+                android:layout_width="fill_parent"
+                android:layout_height="0.0dp"
+                android:layout_weight="1.0"
+                kingdraw:layout_constraintBottom_toTopOf="@id/nav_view_bottom"
+                kingdraw:layout_constraintHorizontal_bias="0.0"
+                kingdraw:layout_constraintLeft_toLeftOf="parent"
+                kingdraw:layout_constraintRight_toRightOf="parent"
+                kingdraw:layout_constraintTop_toTopOf="parent"
+                kingdraw:layout_constraintVertical_bias="1.0">
+    <View android:id="@id/view_top"
+          android:background="@color/colorPrimaryDark"
+          android:layout_width="fill_parent"
+          android:layout_height="25.0dp" />
+    <com.google.android.material.appbar.AppBarLayout android:theme="@style/AppTheme.AppBarOverlay"
+                          android:layout_width="fill_parent"
+                          android:layout_height="wrap_content">
+      <androidx.appcompat.widget.Toolbar android:id="@id/toolbar"
+                            android:background="?attr/colorPrimary"
+                            android:layout_width="fill_parent"
+                            android:layout_height="?attr/actionBarSize"
+                            kingdraw:popupTheme="@style/AppTheme.PopupOverlay"
+                            kingdraw:titleTextAppearance="@style/Toolbar.TitleText">
+        <com.kingagroot.kingdraw.widget.WorkStationToolBar android:layout_gravity="center|start"
+                              android:id="@id/toolbar_work"
+                              android:visibility="gone"
+                              android:layout_width="fill_parent"
+                              android:layout_height="fill_parent" />
+      </androidx.appcompat.widget.Toolbar>
+    </com.google.android.material.appbar.AppBarLayout>
+    <View android:id="@id/shadow"
+          android:background="@drawable/shadow"
+          android:visibility="gone"
+          android:layout_width="fill_parent"
+          android:layout_height="@dimen/show_height" />
+    <FrameLayout android:id="@id/main_content"
+                 android:layout_width="fill_parent"
+                 android:layout_height="0.0dp"
+                 android:layout_weight="1.0" />
+  </LinearLayout>
+  <com.google.android.material.bottomnavigation.BottomNavigationView android:id="@id/nav_view_bottom"
+                        android:background="?android:attr/windowBackground"
+                        android:layout_width="0.0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_marginStart="0.0dp"
+                        android:layout_marginEnd="0.0dp"
+                        kingdraw:itemIconTint="@color/tab_color_state"
+                        kingdraw:itemTextColor="@color/tab_color_state"
+                        kingdraw:labelVisibilityMode="labeled"
+                        kingdraw:layout_constraintBottom_toBottomOf="parent"
+                        kingdraw:layout_constraintLeft_toLeftOf="parent"
+                        kingdraw:layout_constraintRight_toRightOf="parent"
+                        kingdraw:menu="@menu/menu_main_bottom" />
+</androidx.constraintlayout.widget.ConstraintLayout>

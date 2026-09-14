@@ -1,0 +1,56 @@
+<?xml version='1.0' encoding='utf-8' ?>
+<LinearLayout android:orientation="vertical"
+              android:background="@drawable/bg_round_color_f8_radius_10"
+              android:layout_width="fill_parent"
+              android:layout_height="fill_parent"
+              android:layout_marginLeft="20.0dp"
+              android:layout_marginTop="5.0dp"
+              android:layout_marginRight="20.0dp"
+              android:layout_marginBottom="5.0dp"
+              android:layout_marginStart="20.0dp"
+              android:layout_marginEnd="20.0dp" xmlns:android="http://schemas.android.com/apk/res/android">
+  <TextView android:textSize="18.0sp"
+            android:textColor="#333333"
+            android:layout_gravity="center"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10.0dp"
+            android:text="@string/remind" />
+  <TextView android:textSize="14.0sp"
+            android:textColor="#666666"
+            android:gravity="center"
+            android:layout_gravity="center"
+            android:paddingLeft="16.0dp"
+            android:paddingRight="16.0dp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="15.0dp"
+            android:text="@string/pass_success"
+            android:paddingStart="16.0dp"
+            android:paddingEnd="16.0dp" />
+  <View android:background="#d9d9d9"
+        android:layout_width="fill_parent"
+        android:layout_height="1.0dp"
+        android:layout_marginTop="10.0dp" />
+  <RelativeLayout android:layout_width="fill_parent"
+                  android:layout_height="wrap_content">
+    <LinearLayout android:orientation="horizontal"
+                  android:id="@id/ll_re_login"
+                  android:padding="12.0dp"
+                  android:layout_width="wrap_content"
+                  android:layout_height="wrap_content"
+                  android:layout_centerInParent="true">
+      <TextView android:textSize="14.0sp"
+                android:textColor="@color/colorRed"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/re_login" />
+      <TextView android:textSize="16.0sp"
+                android:textColor="@color/colorRed"
+                android:id="@id/tv_count_down"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="（3s）" />
+    </LinearLayout>
+  </RelativeLayout>
+</LinearLayout>

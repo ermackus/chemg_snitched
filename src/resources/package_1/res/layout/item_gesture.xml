@@ -1,0 +1,32 @@
+<?xml version='1.0' encoding='utf-8' ?>
+<RelativeLayout android:layout_width="wrap_content"
+                android:layout_height="wrap_content" xmlns:android="http://schemas.android.com/apk/res/android" xmlns:kingdraw="http://schemas.android.com/apk/res-auto">
+  <RelativeLayout android:id="@id/rl_value"
+                  android:background="@drawable/bg_radius_white_10"
+                  android:layout_width="80.0dp"
+                  android:layout_height="80.0dp"
+                  android:layout_margin="5.0dp">
+    <ImageView android:id="@id/iv_value"
+               android:layout_width="wrap_content"
+               android:layout_height="wrap_content"
+               android:layout_centerInParent="true"
+               kingdraw:srcCompat="@drawable/ic_bond_single" />
+  </RelativeLayout>
+  <RelativeLayout android:background="@drawable/bg_radius_white_10"
+                  android:layout_width="80.0dp"
+                  android:layout_height="80.0dp"
+                  android:layout_margin="5.0dp"
+                  android:layout_toEndOf="@id/rl_value">
+    <ImageView android:id="@id/iv_gesture"
+               android:layout_width="wrap_content"
+               android:layout_height="wrap_content"
+               android:layout_centerInParent="true"
+               kingdraw:srcCompat="@drawable/ic_bond_single" />
+  </RelativeLayout>
+  <ImageView android:id="@id/iv_bind"
+             android:layout_width="wrap_content"
+             android:layout_height="wrap_content"
+             android:layout_centerVertical="true"
+             android:layout_marginStart="75.0dp"
+             kingdraw:srcCompat="@drawable/ic_binding" />
+</RelativeLayout>

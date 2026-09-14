@@ -1,0 +1,47 @@
+<?xml version='1.0' encoding='utf-8' ?>
+<LinearLayout android:orientation="vertical"
+              android:layout_width="fill_parent"
+              android:layout_height="fill_parent" xmlns:android="http://schemas.android.com/apk/res/android" xmlns:kingdraw="http://schemas.android.com/apk/res-auto">
+  <LinearLayout android:id="@id/bar_layout"
+                android:background="#f5f5f5"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content">
+    <com.google.android.material.appbar.AppBarLayout android:id="@id/appbar_layout"
+                          android:layout_width="fill_parent"
+                          android:layout_height="wrap_content">
+      <androidx.appcompat.widget.Toolbar android:theme="@style/AppTheme.Toolbar.FileTag"
+                            android:id="@id/toolbar"
+                            android:visibility="visible"
+                            android:layout_width="fill_parent"
+                            android:layout_height="?attr/actionBarSize"
+                            kingdraw:contentInsetLeft="10.0dp"
+                            kingdraw:navigationIcon="@drawable/ic_nav_back"
+                            kingdraw:popupTheme="@style/OverflowMenu" />
+    </com.google.android.material.appbar.AppBarLayout>
+  </LinearLayout>
+  <FrameLayout android:layout_width="fill_parent"
+               android:layout_height="fill_parent">
+    <LinearLayout android:orientation="vertical"
+                  android:id="@id/content_view"
+                  android:layout_width="fill_parent"
+                  android:layout_height="fill_parent" />
+    <FrameLayout android:id="@id/progress_fram"
+                 android:visibility="gone"
+                 android:clickable="true"
+                 android:layout_width="fill_parent"
+                 android:layout_height="fill_parent">
+      <com.goodsrc.ui.library.widget.MaterialProgress.ProgressView android:layout_gravity="center_horizontal"
+                            android:id="@id/progressView"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginTop="60.0dp" />
+    </FrameLayout>
+    <com.goodsrc.ui.library.widget.EmptyView android:id="@id/empty_view"
+                          android:visibility="gone"
+                          android:layout_width="fill_parent"
+                          android:layout_height="fill_parent" />
+    <View android:background="@drawable/shadow"
+          android:layout_width="fill_parent"
+          android:layout_height="4.0dp" />
+  </FrameLayout>
+</LinearLayout>

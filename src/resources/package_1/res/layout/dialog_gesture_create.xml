@@ -1,0 +1,77 @@
+<?xml version='1.0' encoding='utf-8' ?>
+<LinearLayout android:orientation="vertical"
+              android:background="@drawable/bg_radius_white_10"
+              android:layout_width="fill_parent"
+              android:layout_height="wrap_content" xmlns:android="http://schemas.android.com/apk/res/android" xmlns:kingdraw="http://schemas.android.com/apk/res-auto">
+  <TextView android:textSize="18.0sp"
+            android:textColor="#ff000000"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_margin="10.0dp"
+            android:text="@string/warm_hint" />
+  <TextView android:textSize="16.0sp"
+            android:textColor="#ff666666"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/gesture_create_msg"
+            android:layout_marginStart="10.0dp" />
+  <RelativeLayout android:padding="10.0dp"
+                  android:layout_width="fill_parent"
+                  android:layout_height="wrap_content">
+    <ImageView android:id="@id/iv_link"
+               android:layout_width="wrap_content"
+               android:layout_height="wrap_content"
+               android:layout_centerInParent="true"
+               kingdraw:srcCompat="@drawable/ic_binding" />
+    <RelativeLayout android:id="@id/rl_value"
+                    android:background="@drawable/bg_radius_dash_white_10"
+                    android:layout_width="80.0dp"
+                    android:layout_height="80.0dp"
+                    android:layout_marginTop="5.0dp"
+                    android:layout_marginBottom="5.0dp"
+                    android:layout_toLeftOf="@id/iv_link"
+                    android:layout_centerVertical="true"
+                    android:layout_marginStart="5.0dp"
+                    android:layout_marginEnd="30.0dp">
+      <ImageView android:id="@id/iv_value"
+                 android:layout_width="wrap_content"
+                 android:layout_height="wrap_content"
+                 android:layout_centerInParent="true" />
+    </RelativeLayout>
+    <RelativeLayout android:id="@id/rl_gesture"
+                    android:background="@drawable/bg_radius_dash_white_10"
+                    android:layout_width="80.0dp"
+                    android:layout_height="80.0dp"
+                    android:layout_marginTop="5.0dp"
+                    android:layout_marginRight="5.0dp"
+                    android:layout_marginBottom="5.0dp"
+                    android:layout_toRightOf="@id/iv_link"
+                    android:layout_centerVertical="true"
+                    android:layout_marginStart="30.0dp">
+      <ImageView android:id="@id/iv_gesture"
+                 android:layout_width="wrap_content"
+                 android:layout_height="wrap_content"
+                 android:layout_centerInParent="true" />
+    </RelativeLayout>
+  </RelativeLayout>
+  <RelativeLayout android:layout_width="wrap_content"
+                  android:layout_height="wrap_content"
+                  android:layout_marginBottom="10.0dp"
+                  android:layout_marginEnd="20.0dp">
+    <TextView android:textSize="16.0sp"
+              android:textColor="#ff666666"
+              android:id="@id/tv_create_sure"
+              android:layout_width="wrap_content"
+              android:layout_height="wrap_content"
+              android:text="@string/confirm"
+              android:layout_alignParentRight="true" />
+    <TextView android:textSize="16.0sp"
+              android:textColor="#ff666666"
+              android:id="@id/tv_create_cancel"
+              android:layout_width="wrap_content"
+              android:layout_height="wrap_content"
+              android:text="@string/cancel"
+              android:layout_marginEnd="40.0dp"
+              android:layout_toStartOf="@id/tv_create_sure" />
+  </RelativeLayout>
+</LinearLayout>

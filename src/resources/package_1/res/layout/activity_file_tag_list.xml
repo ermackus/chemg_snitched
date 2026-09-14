@@ -1,0 +1,35 @@
+<?xml version='1.0' encoding='utf-8' ?>
+<FrameLayout android:orientation="vertical"
+             android:layout_width="fill_parent"
+             android:layout_height="fill_parent" xmlns:android="http://schemas.android.com/apk/res/android" xmlns:kingdraw="http://schemas.android.com/apk/res-auto">
+  <com.goodsrc.ui.library.widget.RefreshLayout android:id="@id/refresh"
+                        android:layout_width="fill_parent"
+                        android:layout_height="fill_parent">
+    <ListView android:id="@id/listivew"
+              android:background="@color/white"
+              android:layout_width="fill_parent"
+              android:layout_height="fill_parent"
+              android:dividerHeight="0.5dp" />
+  </com.goodsrc.ui.library.widget.RefreshLayout>
+  <LinearLayout android:gravity="center"
+                android:orientation="vertical"
+                android:id="@id/ll_empty_view"
+                android:visibility="visible"
+                android:layout_width="fill_parent"
+                android:layout_height="fill_parent">
+    <ImageView android:layout_width="wrap_content"
+               android:layout_height="wrap_content"
+               kingdraw:srcCompat="@drawable/ic_tag_nolist" />
+    <TextView android:textSize="14.0sp"
+              android:textColor="@color/color_d9"
+              android:layout_width="wrap_content"
+              android:layout_height="wrap_content"
+              android:layout_marginTop="5.0dp"
+              android:text="@string/tag_empty" />
+    <Button android:id="@id/btn_add_tag"
+            android:layout_width="wrap_content"
+            android:layout_marginTop="15.0dp"
+            android:text="@string/tag_create"
+            style="@style/button_style" />
+  </LinearLayout>
+</FrameLayout>

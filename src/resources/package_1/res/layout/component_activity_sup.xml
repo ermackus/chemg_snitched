@@ -1,0 +1,78 @@
+<?xml version='1.0' encoding='utf-8' ?>
+<LinearLayout android:orientation="horizontal"
+              android:layout_width="fill_parent"
+              android:layout_height="fill_parent" xmlns:android="http://schemas.android.com/apk/res/android" xmlns:kingdraw="http://schemas.android.com/apk/res-auto">
+  <androidx.drawerlayout.widget.DrawerLayout android:id="@id/dl_sup"
+                        android:background="@color/white"
+                        android:layout_width="fill_parent"
+                        android:layout_height="fill_parent">
+    <FrameLayout android:layout_width="fill_parent"
+                 android:layout_height="fill_parent">
+      <LinearLayout android:orientation="vertical"
+                    android:layout_width="fill_parent"
+                    android:layout_height="fill_parent">
+        <RelativeLayout android:id="@id/rl_top"
+                        android:layout_width="fill_parent"
+                        android:layout_height="wrap_content">
+          <ImageButton android:id="@id/ibt_close"
+                       android:background="@null"
+                       android:layout_width="42.0dp"
+                       android:layout_height="42.0dp"
+                       android:layout_centerVertical="true"
+                       android:layout_marginStart="10.0dp"
+                       android:layout_alignParentStart="true"
+                       kingdraw:srcCompat="@drawable/ic_nav_btn_close" />
+          <TextView android:textSize="16.0sp"
+                    android:textColor="@color/black"
+                    android:id="@id/textView3"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/sup_common"
+                    android:layout_centerInParent="true" />
+          <ImageButton android:id="@id/ibt_list_select"
+                       android:background="@drawable/menu_list_selector"
+                       android:layout_width="42.0dp"
+                       android:layout_height="42.0dp"
+                       android:layout_centerVertical="true"
+                       android:layout_marginEnd="10.0dp"
+                       android:layout_alignParentEnd="true" />
+          <ImageButton android:id="@id/ibt_add_sup"
+                       android:background="@drawable/menu_add_selector"
+                       android:layout_width="wrap_content"
+                       android:layout_height="wrap_content"
+                       android:layout_centerVertical="true"
+                       android:layout_marginEnd="8.0dp"
+                       android:layout_toStartOf="@id/ibt_list_select" />
+        </RelativeLayout>
+        <TextView android:textSize="12.0sp"
+                  android:textColor="#999999"
+                  android:gravity="center"
+                  android:id="@id/et_search"
+                  android:background="@drawable/shape_sup_et"
+                  android:layout_width="fill_parent"
+                  android:layout_height="40.0dp"
+                  android:layout_marginLeft="25.0dp"
+                  android:layout_marginTop="5.0dp"
+                  android:layout_marginRight="25.0dp"
+                  android:hint="@string/sup_search_hint"
+                  android:cursorVisible="false"
+                  android:imeOptions="actionSearch|actionNone|flagNoExtractUi" />
+        <GridView android:id="@id/grid_sup"
+                  android:scrollbars="none"
+                  android:layout_width="fill_parent"
+                  android:layout_height="fill_parent"
+                  android:layout_marginLeft="25.0dp"
+                  android:layout_marginTop="5.0dp"
+                  android:layout_marginRight="25.0dp"
+                  android:layout_marginBottom="5.0dp"
+                  android:horizontalSpacing="4.0dp"
+                  android:verticalSpacing="4.0dp"
+                  android:numColumns="7" />
+      </LinearLayout>
+    </FrameLayout>
+    <com.kingagroot.component.ui.widget.sup.SupCommonView android:layout_gravity="center|right"
+                          android:id="@id/sup_common"
+                          android:layout_width="220.0dp"
+                          android:layout_height="fill_parent" />
+  </androidx.drawerlayout.widget.DrawerLayout>
+</LinearLayout>

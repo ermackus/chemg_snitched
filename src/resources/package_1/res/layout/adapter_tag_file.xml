@@ -1,0 +1,40 @@
+<?xml version='1.0' encoding='utf-8' ?>
+<LinearLayout android:orientation="vertical"
+              android:layout_width="fill_parent"
+              android:layout_height="fill_parent" xmlns:android="http://schemas.android.com/apk/res/android">
+  <LinearLayout android:orientation="vertical"
+                android:layout_width="fill_parent"
+                android:layout_height="fill_parent"
+                android:layout_marginBottom="5.0dp">
+    <FrameLayout android:background="@drawable/bg_file_tag_top"
+                 android:layout_width="fill_parent"
+                 android:layout_height="wrap_content">
+      <ImageView android:id="@id/imag_item"
+                 android:padding="1.0dp"
+                 android:layout_width="fill_parent"
+                 android:layout_height="80.0dp"
+                 android:scaleType="fitCenter" />
+      <ImageButton android:layout_gravity="right"
+                   android:id="@id/imgbtn_delete"
+                   android:background="@null"
+                   android:padding="3.0dp"
+                   android:layout_width="wrap_content"
+                   android:layout_height="wrap_content"
+                   android:src="@drawable/ic_list_del_selector" />
+    </FrameLayout>
+    <TextView android:textSize="14.0sp"
+              android:textColor="@android:color/black"
+              android:ellipsize="end"
+              android:gravity="center"
+              android:id="@id/tv_filename"
+              android:background="@drawable/bg_file_tag_bouttom"
+              android:paddingLeft="5.0dp"
+              android:paddingTop="2.0dp"
+              android:paddingRight="5.0dp"
+              android:paddingBottom="5.0dp"
+              android:layout_width="fill_parent"
+              android:layout_height="wrap_content"
+              android:layout_marginTop="-0.5dp"
+              android:singleLine="true" />
+  </LinearLayout>
+</LinearLayout>

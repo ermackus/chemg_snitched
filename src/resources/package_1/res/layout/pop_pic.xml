@@ -1,0 +1,25 @@
+<?xml version='1.0' encoding='utf-8' ?>
+<RelativeLayout android:background="#77000000"
+                android:layout_width="fill_parent"
+                android:layout_height="fill_parent" xmlns:android="http://schemas.android.com/apk/res/android" xmlns:kingdraw="http://schemas.android.com/apk/res-auto">
+  <com.github.chrisbanes.photoview.PhotoView android:id="@id/iv_pic"
+                        android:layout_width="fill_parent"
+                        android:layout_height="fill_parent" />
+  <ProgressBar android:id="@id/loading"
+               android:visibility="gone"
+               android:layout_width="wrap_content"
+               android:layout_height="wrap_content"
+               android:layout_centerInParent="true"
+               android:indeterminateTint="@color/main_red"
+               style="@style/Widget.AppCompat.ProgressBar" />
+  <ImageButton android:id="@id/ibt_close"
+               android:background="@null"
+               android:layout_width="wrap_content"
+               android:layout_height="wrap_content"
+               android:layout_marginTop="10.0dp"
+               android:layout_marginRight="10.0dp"
+               android:layout_alignParentRight="true"
+               android:layout_marginEnd="10.0dp"
+               android:layout_alignParentEnd="true"
+               kingdraw:srcCompat="@drawable/ic_btn_close_white" />
+</RelativeLayout>

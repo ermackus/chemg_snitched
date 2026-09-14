@@ -1,0 +1,64 @@
+<?xml version='1.0' encoding='utf-8' ?>
+<resources>
+  <array name="ai_anim_img">
+    <item>@drawable/ai_anim_any</item>
+    <item>@drawable/ai_anim_benzene</item>
+    <item>@drawable/ai_anim_br_element</item>
+    <item>@drawable/ai_anim_c_element</item>
+    <item>@drawable/ai_anim_cl_element</item>
+    <item>@drawable/ai_anim_cross</item>
+    <item>@drawable/ai_anim_cyclobutane</item>
+    <item>@drawable/ai_anim_cycloheptane</item>
+    <item>@drawable/ai_anim_cyclohexane</item>
+    <item>@drawable/ai_anim_cyclooctane</item>
+    <item>@drawable/ai_anim_cyclopentadiene</item>
+    <item>@drawable/ai_anim_cyclopentane</item>
+    <item>@drawable/ai_anim_cyclopropane</item>
+    <item>@drawable/ai_anim_double_aromatic</item>
+    <item>@drawable/ai_anim_double_bond</item>
+    <item>@drawable/ai_anim_h_element</item>
+    <item>@drawable/ai_anim_hash_bond</item>
+    <item>@drawable/ai_anim_hydrobond</item>
+    <item>@drawable/ai_anim_n_element</item>
+    <item>@drawable/ai_anim_o_element</item>
+    <item>@drawable/ai_anim_s_element</item>
+    <item>@drawable/ai_anim_tri_bond</item>
+    <item>@drawable/ai_anim_wedge_bond</item>
+  </array>
+  <string-array name="recommend_mail_box">
+    <item>\@163.com</item>
+    <item>\@126.com</item>
+    <item>\@163.net</item>
+    <item>\@gmail.com</item>
+    <item>\@qq.com</item>
+    <item>\@hotmail.com</item>
+    <item>\@outlook.com</item>
+    <item>\@icloud.com</item>
+    <item>\@sina.com</item>
+    <item>\@sina.cn</item>
+    <item>\@yahoo.com.cn</item>
+    <item>\@yahoo.com.hk</item>
+    <item>\@yahoo.com.tw</item>
+    <item>\@yahoo.cn</item>
+    <item>\@yahoo.com</item>
+    <item>\@dingtalk.com</item>
+    <item>\@inbox.com</item>
+    <item>\@mail.com</item>
+    <item>\@zoho.com</item>
+    <item>\@aol.com</item>
+    <item>\@ask.com</item>
+    <item>\@live.com</item>
+  </string-array>
+  <string-array name="work_common_name_list">
+    <item>work_baike</item>
+    <item>work_template</item>
+  </string-array>
+  <string-array name="work_common_pic_background">
+    <item>bg_radius_red_10</item>
+    <item>bg_radius_yellow_10</item>
+  </string-array>
+  <string-array name="work_common_pic_list">
+    <item>ic_work_encyclopedias</item>
+    <item>ic_work_template</item>
+  </string-array>
+</resources>

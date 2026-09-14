@@ -1,0 +1,40 @@
+<?xml version='1.0' encoding='utf-8' ?>
+<LinearLayout android:gravity="center_vertical"
+              android:orientation="horizontal"
+              android:layout_width="fill_parent"
+              android:layout_height="fill_parent"
+              android:baselineAligned="false" xmlns:android="http://schemas.android.com/apk/res/android" xmlns:kingdraw="http://schemas.android.com/apk/res-auto">
+  <LinearLayout android:orientation="horizontal"
+                android:id="@id/ll_menu_items"
+                android:layout_width="0.0dp"
+                android:layout_height="fill_parent"
+                android:layout_weight="1.0" />
+  <LinearLayout android:gravity="center_vertical"
+                android:orientation="horizontal"
+                android:id="@id/ll_more_item"
+                android:visibility="visible"
+                android:layout_width="wrap_content"
+                android:layout_height="fill_parent">
+    <ImageView android:layout_width="wrap_content"
+               android:layout_height="fill_parent"
+               android:src="@mipmap/line_function" />
+    <com.kingagroot.component.ui.view.GImageButton android:id="@id/ibt_more"
+                          android:background="@drawable/kd_ibt_selector"
+                          android:padding="5.0dp"
+                          android:layout_width="@dimen/home_tool_height"
+                          android:layout_height="@dimen/home_tool_height"
+                          kingdraw:CornerWidth="6.0dp"
+                          kingdraw:VectorDrawable="@drawable/ic_element_more" />
+  </LinearLayout>
+  <ImageView android:layout_width="wrap_content"
+             android:layout_height="fill_parent"
+             android:src="@mipmap/line_function" />
+  <com.kingagroot.component.ui.menu.menuitem.UndoItemView android:id="@id/undo_item_view"
+                        android:layout_width="@dimen/home_tool_height"
+                        android:layout_height="@dimen/home_tool_height"
+                        kingdraw:VectorDrawable="@drawable/ic_canvas_undo" />
+  <com.kingagroot.component.ui.menu.menuitem.RedoItemView android:id="@id/redo_item_view"
+                        android:layout_width="@dimen/home_tool_height"
+                        android:layout_height="@dimen/home_tool_height"
+                        kingdraw:VectorDrawable="@drawable/ic_canvas_redo" />
+</LinearLayout>

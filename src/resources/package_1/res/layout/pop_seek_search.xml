@@ -1,0 +1,37 @@
+<?xml version='1.0' encoding='utf-8' ?>
+<RelativeLayout android:orientation="vertical"
+                android:layout_width="fill_parent"
+                android:layout_height="fill_parent" xmlns:android="http://schemas.android.com/apk/res/android">
+  <LinearLayout android:layout_gravity="right"
+                android:orientation="vertical"
+                android:id="@id/ll_seek"
+                android:background="@drawable/similar_bg"
+                android:layout_width="56.0dp"
+                android:layout_height="fill_parent"
+                android:layout_marginTop="56.0dp"
+                android:layout_marginRight="10.0dp"
+                android:layout_marginBottom="10.0dp"
+                android:layout_alignParentRight="true">
+    <com.kingagroot.kingdraw.ui.baike.seekbar.GVerticalSeekBar android:layout_gravity="center_horizontal"
+                          android:id="@id/seekbar"
+                          android:layout_width="30.0dp"
+                          android:layout_height="0.0dp"
+                          android:layout_marginTop="10.0dp"
+                          android:layout_weight="1.0" />
+    <TextView android:textSize="12.0sp"
+              android:layout_gravity="center_horizontal"
+              android:paddingBottom="20.0dp"
+              android:layout_width="wrap_content"
+              android:layout_height="wrap_content"
+              android:text="@string/similarity_degree"
+              android:singleLine="true" />
+  </LinearLayout>
+  <TextView android:textSize="16.0sp"
+            android:textColor="@color/white"
+            android:gravity="center"
+            android:id="@id/indicatorview"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginRight="-9.0dp"
+            android:layout_toLeftOf="@id/ll_seek" />
+</RelativeLayout>

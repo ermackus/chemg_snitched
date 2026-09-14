@@ -1,0 +1,20 @@
+<?xml version='1.0' encoding='utf-8' ?>
+<LinearLayout android:gravity="center"
+              android:orientation="vertical"
+              android:id="@id/ll_bottom_tool_item"
+              android:descendantFocusability="blocksDescendants"
+              android:layout_width="wrap_content"
+              android:layout_height="wrap_content" xmlns:android="http://schemas.android.com/apk/res/android" xmlns:kingdraw="http://schemas.android.com/apk/res-auto">
+  <com.kingagroot.component.ui.view.GImageButton android:layout_gravity="center"
+                        android:id="@id/ibt_bottom_item"
+                        android:background="@drawable/bg_alignment_selector"
+                        android:focusable="false"
+                        android:focusableInTouchMode="false"
+                        android:clickable="false"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:scaleType="center"
+                        android:minWidth="40.0dp"
+                        android:minHeight="40.0dp"
+                        kingdraw:VectorDrawable="@drawable/ic_bond_single" />
+</LinearLayout>

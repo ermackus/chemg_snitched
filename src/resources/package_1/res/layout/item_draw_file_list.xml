@@ -1,0 +1,65 @@
+<?xml version='1.0' encoding='utf-8' ?>
+<FrameLayout android:orientation="horizontal"
+             android:background="@color/white"
+             android:layout_width="fill_parent"
+             android:layout_height="wrap_content" xmlns:android="http://schemas.android.com/apk/res/android">
+  <LinearLayout android:orientation="horizontal"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content">
+    <View android:id="@id/ck_view"
+          android:layout_width="50.0dp"
+          android:layout_height="fill_parent" />
+    <LinearLayout android:orientation="vertical"
+                  android:layout_width="fill_parent"
+                  android:layout_height="wrap_content">
+      <LinearLayout android:orientation="horizontal"
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:foreground="?attr/selectableItemBackground">
+        <ImageView android:id="@id/img_editor"
+                   android:background="@android:color/white"
+                   android:layout_width="0.0dp"
+                   android:layout_height="fill_parent"
+                   android:layout_margin="10.0dp"
+                   android:maxHeight="60.0dp"
+                   android:layout_weight="0.3" />
+        <LinearLayout android:orientation="vertical"
+                      android:background="@color/white"
+                      android:layout_width="0.0dp"
+                      android:layout_height="wrap_content"
+                      android:layout_weight="0.7">
+          <TextView android:textSize="16.0sp"
+                    android:textColor="#ff000000"
+                    android:ellipsize="end"
+                    android:id="@id/tv_editor_title"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="10.0dp"
+                    android:layout_marginTop="8.0dp"
+                    android:layout_marginRight="10.0dp"
+                    android:maxLines="2"
+                    android:lines="2" />
+          <TextView android:textSize="12.0sp"
+                    android:textColor="#ff767676"
+                    android:id="@id/tv_editor_date"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="10.0dp"
+                    android:layout_marginTop="8.0dp"
+                    android:layout_marginRight="10.0dp"
+                    android:layout_marginBottom="8.0dp"
+                    android:text="2017-11-09  12:22" />
+        </LinearLayout>
+      </LinearLayout>
+      <View android:background="@color/line"
+            android:layout_width="fill_parent"
+            android:layout_height="1.0dp" />
+    </LinearLayout>
+  </LinearLayout>
+  <CheckBox android:layout_gravity="center_vertical"
+            android:id="@id/cb_check"
+            android:visibility="visible"
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent"
+            android:layout_marginLeft="10.0dp" />
+</FrameLayout>

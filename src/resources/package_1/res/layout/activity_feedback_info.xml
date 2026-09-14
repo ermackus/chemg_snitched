@@ -1,0 +1,80 @@
+<?xml version='1.0' encoding='utf-8' ?>
+<com.kingagroot.kingdraw.widget.GSwipeRefreshLayout android:orientation="vertical"
+                      android:id="@id/swiperefreshlayout"
+                      android:background="@android:color/white"
+                      android:layout_width="fill_parent"
+                      android:layout_height="fill_parent" xmlns:android="http://schemas.android.com/apk/res/android" xmlns:kingdraw="http://schemas.android.com/apk/res-auto">
+  <ScrollView android:id="@id/scrollview"
+              android:layout_width="fill_parent"
+              android:layout_height="wrap_content">
+    <LinearLayout android:orientation="vertical"
+                  android:layout_width="fill_parent"
+                  android:layout_height="wrap_content">
+      <FrameLayout android:background="@color/white"
+                   android:paddingTop="5.0dp"
+                   android:layout_width="fill_parent"
+                   android:layout_height="wrap_content"
+                   android:paddingStart="8.0dp">
+        <com.goodsrc.ui.library.widget.RoundAndCircleImageView android:id="@id/iv_info_head"
+                              android:layout_width="36.0dp"
+                              android:layout_height="36.0dp"
+                              android:layout_margin="8.0dp"
+                              android:contentDescription="@string/user_img"
+                              kingdraw:srcCompat="@0x7f080130" />
+        <LinearLayout android:orientation="vertical"
+                      android:layout_width="fill_parent"
+                      android:layout_height="fill_parent"
+                      android:layout_marginLeft="50.0dp"
+                      android:layout_marginRight="10.0dp"
+                      android:layout_marginBottom="8.0dp"
+                      android:layout_marginStart="50.0dp"
+                      android:layout_marginEnd="10.0dp">
+          <TextView android:textSize="14.0sp"
+                    android:textStyle="bold"
+                    android:textColor="@color/black"
+                    android:id="@id/tv_feedback_info_user"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="8.0dp" />
+          <TextView android:textSize="10.0sp"
+                    android:textColor="#999999"
+                    android:id="@id/tv_feedback_info_time"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="3.0dp" />
+          <TextView android:textSize="12.0sp"
+                    android:textColor="#333333"
+                    android:id="@id/tv_feedback_info_content"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="5.0dp" />
+          <com.kingagroot.kingdraw.widget.FeedBackPicView android:id="@id/fpv_info_img"
+                                android:layout_width="fill_parent"
+                                android:layout_height="wrap_content"
+                                android:layout_marginTop="8.0dp" />
+        </LinearLayout>
+      </FrameLayout>
+      <View android:background="#f8f8f8"
+            android:layout_width="fill_parent"
+            android:layout_height="10.0dp" />
+      <LinearLayout android:orientation="vertical"
+                    android:paddingLeft="8.0dp"
+                    android:layout_width="fill_parent"
+                    android:layout_height="fill_parent"
+                    android:layout_marginTop="10.0dp">
+        <TextView android:textSize="16.0sp"
+                  android:textColor="#030303"
+                  android:gravity="center_vertical"
+                  android:paddingLeft="8.0dp"
+                  android:layout_width="fill_parent"
+                  android:layout_height="40.0dp"
+                  android:text="@string/customer_reply"
+                  android:paddingStart="8.0dp" />
+        <com.goodsrc.ui.library.widget.NoScrollListView android:id="@id/list_reply"
+                              android:layout_width="fill_parent"
+                              android:layout_height="fill_parent"
+                              android:divider="@null" />
+      </LinearLayout>
+    </LinearLayout>
+  </ScrollView>
+</com.kingagroot.kingdraw.widget.GSwipeRefreshLayout>

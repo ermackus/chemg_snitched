@@ -1,0 +1,38 @@
+<?xml version='1.0' encoding='utf-8' ?>
+<LinearLayout android:gravity="top"
+              android:orientation="vertical"
+              android:background="@android:color/transparent"
+              android:layout_width="fill_parent"
+              android:layout_height="fill_parent"
+              android:layout_marginLeft="20.0dp"
+              android:layout_marginTop="80.0dp"
+              android:layout_marginRight="20.0dp"
+              android:layout_marginBottom="80.0dp" xmlns:android="http://schemas.android.com/apk/res/android">
+  <include layout="@layout/layout_version" />
+  <View android:background="#f3f3f3"
+        android:layout_width="fill_parent"
+        android:layout_height="1.0dp" />
+  <LinearLayout android:orientation="horizontal"
+                android:layout_width="fill_parent"
+                android:layout_height="45.0dp">
+    <Button android:textSize="14.0sp"
+            android:textColor="#666666"
+            android:id="@id/btn_detail"
+            android:background="@drawable/bg_update_cancel_selector"
+            android:layout_width="0.0dp"
+            android:layout_height="45.0dp"
+            android:text="@string/version_dialog_detail"
+            android:layout_weight="1.0" />
+    <View android:background="#f3f3f3"
+          android:layout_width="0.5dp"
+          android:layout_height="fill_parent" />
+    <Button android:textSize="14.0sp"
+            android:textColor="@color/main_red"
+            android:id="@id/btn_gotit"
+            android:background="@drawable/bg_update_download_selector"
+            android:layout_width="0.0dp"
+            android:layout_height="45.0dp"
+            android:text="@string/got_it"
+            android:layout_weight="1.0" />
+  </LinearLayout>
+</LinearLayout>

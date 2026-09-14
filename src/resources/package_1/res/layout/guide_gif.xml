@@ -1,0 +1,48 @@
+<?xml version='1.0' encoding='utf-8' ?>
+<RelativeLayout android:layout_width="fill_parent"
+                android:layout_height="fill_parent" xmlns:android="http://schemas.android.com/apk/res/android" xmlns:kingdraw="http://schemas.android.com/apk/res-auto">
+  <LinearLayout android:gravity="center"
+                android:orientation="vertical"
+                android:id="@id/rl_boot_page"
+                android:background="@drawable/popup_window"
+                android:layout_width="400.0dp"
+                android:layout_height="wrap_content"
+                android:layout_centerInParent="true">
+    <androidx.viewpager.widget.ViewPager android:id="@id/vp_boot_page"
+                          android:padding="3.0dp"
+                          android:layout_width="fill_parent"
+                          android:layout_height="320.0dp" />
+    <TextView android:textSize="16.0sp"
+              android:textColor="@color/black"
+              android:id="@id/text_num"
+              android:layout_width="wrap_content"
+              android:layout_height="wrap_content"
+              android:text="1/5" />
+  </LinearLayout>
+  <TextView android:textColor="@color/white"
+            android:id="@id/tv_boot_page_skip"
+            android:paddingLeft="5.0dp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/guide_boot_page_skip"
+            android:layout_toRightOf="@id/rl_boot_page"
+            android:layout_alignTop="@id/rl_boot_page" />
+  <RelativeLayout android:id="@id/rl_suspension"
+                  android:background="#804d4d4d"
+                  android:layout_width="fill_parent"
+                  android:layout_height="fill_parent">
+    <RelativeLayout android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerInParent="true">
+      <androidx.appcompat.widget.AppCompatImageView android:id="@id/left"
+                            android:layout_width="100.0dp"
+                            android:layout_height="100.0dp"
+                            kingdraw:srcCompat="@drawable/ic_ges_left" />
+      <androidx.appcompat.widget.AppCompatImageView android:layout_width="100.0dp"
+                            android:layout_height="100.0dp"
+                            android:layout_marginLeft="180.0dp"
+                            android:layout_toRightOf="@id/left"
+                            kingdraw:srcCompat="@drawable/ic_ges_right" />
+    </RelativeLayout>
+  </RelativeLayout>
+</RelativeLayout>

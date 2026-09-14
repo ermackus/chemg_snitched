@@ -1,0 +1,18 @@
+<?xml version='1.0' encoding='utf-8' ?>
+<FrameLayout android:background="@android:color/white"
+             android:layout_width="@dimen/home_tool_height"
+             android:layout_height="@dimen/home_tool_height" xmlns:android="http://schemas.android.com/apk/res/android">
+  <TextView android:textSize="8.0sp"
+            android:textColor="#333333"
+            android:gravity="center"
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent"
+            android:text="@string/color_custom"
+            android:lines="1"
+            android:singleLine="true" />
+  <com.kingagroot.component.ui.view.RotateTextView android:id="@id/custom"
+                        android:background="@drawable/bg_frame_black"
+                        android:layout_width="fill_parent"
+                        android:layout_height="fill_parent"
+                        android:layout_margin="2.0dp" />
+</FrameLayout>

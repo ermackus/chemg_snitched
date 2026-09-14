@@ -1,0 +1,56 @@
+<?xml version='1.0' encoding='utf-8' ?>
+<LinearLayout android:orientation="vertical"
+              android:background="@color/white"
+              android:paddingTop="10.0dp"
+              android:layout_width="fill_parent"
+              android:layout_height="fill_parent" xmlns:android="http://schemas.android.com/apk/res/android" xmlns:kingdraw="http://schemas.android.com/apk/res-auto">
+  <RelativeLayout android:layout_width="fill_parent"
+                  android:layout_height="45.0dp"
+                  android:layout_marginStart="20.0dp">
+    <SearchView android:textSize="16.0sp"
+                android:id="@id/sv_pedia"
+                android:background="@drawable/bg_round_gray"
+                android:focusable="true"
+                android:focusableInTouchMode="true"
+                android:layout_width="fill_parent"
+                android:layout_height="32.0dp"
+                android:layout_centerVertical="true"
+                android:iconifiedByDefault="false"
+                android:layout_toStartOf="@id/btn_cancel_search"
+                android:queryBackground="@android:color/transparent" />
+    <com.google.android.material.button.MaterialButton android:textColor="#ff666666"
+                          android:gravity="center"
+                          android:id="@id/btn_cancel_search"
+                          android:layout_width="wrap_content"
+                          android:layout_height="wrap_content"
+                          android:text="@string/cancel"
+                          android:layout_centerVertical="true"
+                          android:textAllCaps="false"
+                          android:layout_alignParentEnd="true"
+                          style="@style/Widget.MaterialComponents.Button.TextButton" />
+  </RelativeLayout>
+  <RelativeLayout android:orientation="horizontal"
+                  android:layout_width="wrap_content"
+                  android:layout_height="wrap_content"
+                  android:layout_margin="20.0dp">
+    <TextView android:textSize="14.0sp"
+              android:textColor="#666666"
+              android:layout_gravity="center"
+              android:layout_width="wrap_content"
+              android:layout_height="wrap_content"
+              android:text="@string/search_history" />
+    <ImageButton android:layout_gravity="center"
+                 android:id="@id/ibt_clean_history"
+                 android:background="@color/white"
+                 android:layout_width="wrap_content"
+                 android:layout_height="wrap_content"
+                 android:layout_marginStart="10.0dp"
+                 android:layout_alignParentEnd="true"
+                 kingdraw:srcCompat="@drawable/ic_clean_history" />
+  </RelativeLayout>
+  <com.google.android.material.chip.ChipGroup android:id="@id/chip_group_history"
+                        android:layout_width="fill_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginStart="20.0dp"
+                        android:layout_marginEnd="20.0dp" />
+</LinearLayout>

@@ -1,0 +1,30 @@
+<?xml version='1.0' encoding='utf-8' ?>
+<LinearLayout android:orientation="vertical"
+              android:background="@drawable/bg_white_top_radius"
+              android:layout_width="fill_parent"
+              android:layout_height="fill_parent" xmlns:android="http://schemas.android.com/apk/res/android" xmlns:kingdraw="http://schemas.android.com/apk/res-auto">
+  <RelativeLayout android:layout_width="fill_parent"
+                  android:layout_height="45.0dp">
+    <TextView android:textSize="16.0sp"
+              android:textColor="#ff000000"
+              android:gravity="center"
+              android:layout_width="wrap_content"
+              android:layout_height="wrap_content"
+              android:text="@string/receive_code"
+              android:layout_centerInParent="true" />
+    <ImageButton android:id="@id/ibt_close_pop"
+                 android:background="@android:color/transparent"
+                 android:layout_width="wrap_content"
+                 android:layout_height="wrap_content"
+                 android:layout_margin="8.0dp"
+                 android:layout_centerVertical="true"
+                 android:layout_alignParentEnd="true"
+                 kingdraw:srcCompat="@drawable/ic_close_black_24dp" />
+  </RelativeLayout>
+  <TextView android:id="@id/tv_code"
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent"
+            android:layout_marginBottom="20.0dp"
+            android:layout_marginStart="20.0dp"
+            android:layout_marginEnd="20.0dp" />
+</LinearLayout>

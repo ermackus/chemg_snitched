@@ -1,0 +1,28 @@
+<?xml version='1.0' encoding='utf-8' ?>
+<LinearLayout android:orientation="vertical"
+              android:layout_width="fill_parent"
+              android:layout_height="wrap_content" xmlns:android="http://schemas.android.com/apk/res/android">
+  <View android:background="@color/line"
+        android:layout_width="fill_parent"
+        android:layout_height="0.5dp" />
+  <com.kingagroot.component.ui.widget.toolpop.GridViewMaxHeight android:id="@id/grid_view"
+                        android:background="@color/white"
+                        android:paddingTop="5.0dp"
+                        android:paddingBottom="5.0dp"
+                        android:layout_width="fill_parent"
+                        android:layout_height="wrap_content"
+                        android:horizontalSpacing="1.0dp"
+                        android:verticalSpacing="1.0dp"
+                        android:columnWidth="48.0dp"
+                        android:numColumns="auto_fit" />
+  <View android:background="@color/line"
+        android:layout_width="fill_parent"
+        android:layout_height="0.5dp" />
+  <View android:id="@id/indicator"
+        android:background="@color/white"
+        android:layout_width="32.0dp"
+        android:layout_height="1.0dp"
+        android:layout_marginLeft="4.0dp"
+        android:layout_marginTop="-1.0dp"
+        android:layout_marginRight="4.0dp" />
+</LinearLayout>

@@ -1,0 +1,50 @@
+<?xml version='1.0' encoding='utf-8' ?>
+<FrameLayout android:layout_width="fill_parent"
+             android:layout_height="fill_parent" xmlns:android="http://schemas.android.com/apk/res/android">
+  <LinearLayout android:orientation="vertical"
+                android:background="@drawable/pop_bg"
+                android:paddingBottom="5.0dp"
+                android:layout_width="fill_parent"
+                android:layout_height="fill_parent"
+                android:layout_marginTop="6.0dp"
+                android:layout_marginBottom="6.0dp"
+                android:layout_marginStart="16.0dp">
+    <TextView android:textSize="18.0sp"
+              android:ellipsize="end"
+              android:gravity="center_vertical"
+              android:layout_gravity="center"
+              android:id="@id/tv_use_sup_name"
+              android:layout_width="fill_parent"
+              android:layout_height="45.0dp"
+              android:lines="2"
+              android:drawablePadding="5.0dp"
+              android:paddingStart="30.0dp" />
+    <ListView android:id="@id/lv_sup"
+              android:scrollbars="none"
+              android:layout_width="fill_parent"
+              android:layout_height="0.0dp"
+              android:divider="@null"
+              android:dividerHeight="0.0dp"
+              android:layout_weight="1.0"
+              android:alpha="0.95" />
+    <View android:background="#f3f3f3"
+          android:layout_width="fill_parent"
+          android:layout_height="1.0dp" />
+    <TextView android:textSize="14.0sp"
+              android:textColor="#40bcff"
+              android:gravity="center|end"
+              android:id="@id/tv_more"
+              android:background="@null"
+              android:layout_width="fill_parent"
+              android:layout_height="40.0dp"
+              android:layout_marginBottom="1.0dp"
+              android:text="@string/sup_more"
+              android:paddingEnd="20.0dp" />
+  </LinearLayout>
+  <ImageButton android:layout_gravity="center_vertical"
+               android:id="@id/ibt_close_sup"
+               android:background="@null"
+               android:layout_width="45.0dp"
+               android:layout_height="45.0dp"
+               android:src="@drawable/btn_right_selector" />
+</FrameLayout>

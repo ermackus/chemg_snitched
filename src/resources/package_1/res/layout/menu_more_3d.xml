@@ -1,0 +1,43 @@
+<?xml version='1.0' encoding='utf-8' ?>
+<LinearLayout android:orientation="vertical"
+              android:background="@drawable/bg_round_color_95_radius_10"
+              android:layout_width="wrap_content"
+              android:layout_height="wrap_content"
+              android:minWidth="200.0dp" xmlns:android="http://schemas.android.com/apk/res/android">
+  <LinearLayout android:orientation="horizontal"
+                android:layout_width="fill_parent"
+                android:layout_height="40.0dp">
+    <TextView android:textSize="16.0sp"
+              android:textColor="#383838"
+              android:layout_width="0.0dp"
+              android:layout_height="wrap_content"
+              android:text="@string/show_3d_h"
+              android:layout_weight="0.7"
+              android:paddingStart="15.0dp" />
+    <androidx.appcompat.widget.SwitchCompat android:id="@id/switch_show_h"
+                          android:layout_width="0.0dp"
+                          android:layout_height="fill_parent"
+                          android:checked="true"
+                          android:layout_weight="0.3"
+                          android:paddingEnd="15.0dp" />
+  </LinearLayout>
+  <LinearLayout android:orientation="horizontal"
+                android:layout_width="fill_parent"
+                android:layout_height="40.0dp">
+    <TextView android:textSize="16.0sp"
+              android:textColor="#383838"
+              android:ellipsize="end"
+              android:layout_width="0.0dp"
+              android:layout_height="wrap_content"
+              android:text="@string/rotate_3d_auto"
+              android:lines="1"
+              android:layout_weight="0.7"
+              android:paddingStart="15.0dp" />
+    <androidx.appcompat.widget.SwitchCompat android:id="@id/switch_rotate"
+                          android:layout_width="0.0dp"
+                          android:layout_height="fill_parent"
+                          android:checked="true"
+                          android:layout_weight="0.3"
+                          android:paddingEnd="15.0dp" />
+  </LinearLayout>
+</LinearLayout>

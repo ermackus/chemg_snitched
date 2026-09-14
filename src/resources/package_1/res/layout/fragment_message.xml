@@ -1,0 +1,35 @@
+<?xml version='1.0' encoding='utf-8' ?>
+<LinearLayout android:orientation="vertical"
+              android:layout_width="fill_parent"
+              android:layout_height="fill_parent" xmlns:android="http://schemas.android.com/apk/res/android" xmlns:kingdraw="http://schemas.android.com/apk/res-auto">
+  <com.kingagroot.kingdraw.widget.GSwipeRefreshLayout android:id="@id/swiperefreshlayout"
+                        android:visibility="gone"
+                        android:layout_width="fill_parent"
+                        android:layout_height="fill_parent">
+    <com.kingagroot.kingdraw.widget.MListView android:id="@id/list_messages"
+                          android:background="@color/white"
+                          android:layout_width="fill_parent"
+                          android:layout_height="fill_parent"
+                          android:layout_margin="10.0dp"
+                          android:listSelector="@android:color/transparent"
+                          android:dividerHeight="1.0dp" />
+  </com.kingagroot.kingdraw.widget.GSwipeRefreshLayout>
+  <RelativeLayout android:id="@id/rl_no_msg"
+                  android:layout_width="fill_parent"
+                  android:layout_height="fill_parent">
+    <ImageView android:layout_width="164.0dp"
+               android:layout_height="118.0dp"
+               android:layout_above="@id/tv_no_msg"
+               android:layout_centerHorizontal="true"
+               kingdraw:srcCompat="@drawable/ic_nomsg" />
+    <TextView android:textSize="14.0sp"
+              android:textColor="#d9d9d9"
+              android:id="@id/tv_no_msg"
+              android:paddingTop="7.0dp"
+              android:layout_width="wrap_content"
+              android:layout_height="wrap_content"
+              android:text="@string/no_msg"
+              android:layout_centerHorizontal="true"
+              android:layout_centerVertical="true" />
+  </RelativeLayout>
+</LinearLayout>

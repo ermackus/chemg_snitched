@@ -1,0 +1,36 @@
+<?xml version='1.0' encoding='utf-8' ?>
+<RelativeLayout android:orientation="horizontal"
+                android:layout_width="fill_parent"
+                android:layout_height="fill_parent" xmlns:android="http://schemas.android.com/apk/res/android">
+  <ImageView android:id="@id/iv_triangle"
+             android:layout_width="wrap_content"
+             android:layout_height="wrap_content"
+             android:layout_marginTop="55.0dp"
+             android:src="@drawable/triangle_up"
+             android:layout_marginEnd="25.0dp"
+             android:layout_alignParentEnd="true" />
+  <FrameLayout android:background="@drawable/bg_radius_all_white_10"
+               android:padding="6.0dp"
+               android:layout_width="wrap_content"
+               android:layout_height="wrap_content"
+               android:minWidth="180.0dp"
+               android:layout_below="@id/iv_triangle"
+               android:layout_marginEnd="6.0dp"
+               android:layout_alignParentEnd="true">
+    <TextView android:textSize="14.0sp"
+              android:textColor="#ff000000"
+              android:gravity="center"
+              android:layout_width="wrap_content"
+              android:layout_height="36.0dp"
+              android:text="@string/main_guide_three" />
+    <Button android:textSize="14.0sp"
+            android:textColor="@android:color/white"
+            android:layout_gravity="right"
+            android:id="@id/btn_got"
+            android:background="@drawable/btn_blue_guide_selector"
+            android:layout_width="wrap_content"
+            android:layout_height="30.0dp"
+            android:layout_marginTop="50.0dp"
+            android:text="@string/got_it" />
+  </FrameLayout>
+</RelativeLayout>

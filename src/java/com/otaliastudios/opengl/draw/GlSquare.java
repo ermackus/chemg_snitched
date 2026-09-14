@@ -1,0 +1,13 @@
+package com.otaliastudios.opengl.draw;
+
+import kotlin.Metadata;
+
+@Metadata(d1 = { "\u0000\f\n\u0002\u0018\u0002\n\u0002\u0018\u0002\n\u0002\b\u0002\b\u0016\u0018\u00002\u00020\u0001B\u0005¢\u0006\u0002\u0010\u0002¨\u0006\u0003" }, d2 = { "Lcom/otaliastudios/opengl/draw/GlSquare;", "Lcom/otaliastudios/opengl/draw/GlPolygon;", "()V", "library_release" }, k = 1, mv = { 1, 5, 1 }, xi = 48)
+public class GlSquare extends GlPolygon
+{
+    public GlSquare() {
+        super(4);
+        this.setRotation(45.0f);
+        this.setRadius((float)Math.sqrt((double)2.0f));
+    }
+}

@@ -1,0 +1,26 @@
+<?xml version='1.0' encoding='utf-8' ?>
+<LinearLayout android:orientation="vertical"
+              android:layout_width="fill_parent"
+              android:layout_height="fill_parent" xmlns:android="http://schemas.android.com/apk/res/android" xmlns:kingdraw="http://schemas.android.com/apk/res-auto">
+  <com.google.android.material.appbar.AppBarLayout android:background="@color/colorPrimary"
+                        android:layout_width="fill_parent"
+                        android:layout_height="wrap_content"
+                        kingdraw:elevation="10.0dp">
+    <com.google.android.material.tabs.TabLayout android:id="@id/tablayout"
+                          android:layout_width="fill_parent"
+                          android:layout_height="45.0dp"
+                          kingdraw:tabIndicatorColor="@color/main_red"
+                          kingdraw:tabSelectedTextColor="@color/main_red"
+                          kingdraw:tabTextAppearance="@android:style/TextAppearance.Widget.TabWidget"
+                          kingdraw:tabTextColor="@android:color/black" />
+  </com.google.android.material.appbar.AppBarLayout>
+  <FrameLayout android:layout_width="fill_parent"
+               android:layout_height="fill_parent">
+    <com.kingagroot.kingdraw.widget.GViewPager android:id="@id/viewpager"
+                          android:layout_width="fill_parent"
+                          android:layout_height="fill_parent" />
+    <View android:background="@drawable/shadow"
+          android:layout_width="fill_parent"
+          android:layout_height="@dimen/show_height" />
+  </FrameLayout>
+</LinearLayout>

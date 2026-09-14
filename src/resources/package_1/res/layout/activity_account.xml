@@ -1,0 +1,60 @@
+<?xml version='1.0' encoding='utf-8' ?>
+<LinearLayout android:orientation="vertical"
+              android:layout_width="fill_parent"
+              android:layout_height="fill_parent" xmlns:android="http://schemas.android.com/apk/res/android" xmlns:kingdraw="http://schemas.android.com/apk/res-auto">
+  <RelativeLayout android:id="@id/rl_change_pass"
+                  android:background="@color/white"
+                  android:layout_width="fill_parent"
+                  android:layout_height="45.0dp"
+                  android:foreground="?android:attr/selectableItemBackground">
+    <TextView android:textSize="14.0sp"
+              android:textColor="#ff484848"
+              android:layout_width="wrap_content"
+              android:layout_height="wrap_content"
+              android:layout_marginLeft="15.0dp"
+              android:text="@string/change_pass"
+              android:layout_alignParentLeft="true"
+              android:layout_centerVertical="true"
+              android:layout_marginStart="15.0dp"
+              android:layout_alignParentStart="true" />
+    <ImageView android:layout_width="wrap_content"
+               android:layout_height="wrap_content"
+               android:layout_marginRight="10.0dp"
+               android:layout_alignParentRight="true"
+               android:layout_centerVertical="true"
+               android:contentDescription="@string/next"
+               android:layout_marginEnd="10.0dp"
+               android:layout_alignParentEnd="true"
+               kingdraw:srcCompat="@drawable/ic_chevron_right_black_24dp" />
+  </RelativeLayout>
+  <View android:background="#d9d9d9"
+        android:layout_width="fill_parent"
+        android:layout_height="1.0dp"
+        android:layout_marginLeft="15.0dp"
+        android:layout_marginStart="15.0dp" />
+  <RelativeLayout android:id="@id/rl_deactivate"
+                  android:background="@color/white"
+                  android:layout_width="fill_parent"
+                  android:layout_height="45.0dp"
+                  android:foreground="?android:attr/selectableItemBackground">
+    <TextView android:textSize="14.0sp"
+              android:textColor="#ff484848"
+              android:layout_width="wrap_content"
+              android:layout_height="wrap_content"
+              android:layout_marginLeft="15.0dp"
+              android:text="@string/cancel_account"
+              android:layout_alignParentLeft="true"
+              android:layout_centerVertical="true"
+              android:layout_marginStart="15.0dp"
+              android:layout_alignParentStart="true" />
+    <ImageView android:layout_width="wrap_content"
+               android:layout_height="wrap_content"
+               android:layout_marginRight="10.0dp"
+               android:layout_alignParentRight="true"
+               android:layout_centerVertical="true"
+               android:contentDescription="@string/next"
+               android:layout_marginEnd="10.0dp"
+               android:layout_alignParentEnd="true"
+               kingdraw:srcCompat="@drawable/ic_chevron_right_black_24dp" />
+  </RelativeLayout>
+</LinearLayout>

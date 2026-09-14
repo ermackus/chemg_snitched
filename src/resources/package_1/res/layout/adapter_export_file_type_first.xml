@@ -1,0 +1,36 @@
+<?xml version='1.0' encoding='utf-8' ?>
+<LinearLayout android:orientation="vertical"
+              android:descendantFocusability="blocksDescendants"
+              android:layout_width="fill_parent"
+              android:layout_height="wrap_content" xmlns:android="http://schemas.android.com/apk/res/android" xmlns:kingdraw="http://schemas.android.com/apk/res-auto">
+  <LinearLayout android:gravity="center_vertical"
+                android:orientation="horizontal"
+                android:paddingLeft="6.0dp"
+                android:layout_width="fill_parent"
+                android:layout_height="45.0dp"
+                android:layout_weight="1.0">
+    <TextView android:textSize="18.0sp"
+              android:textColor="#de000000"
+              android:gravity="center_vertical"
+              android:id="@id/tv_format"
+              android:layout_width="wrap_content"
+              android:layout_height="fill_parent"
+              android:text="@string/format_kdx" />
+    <TextView android:textSize="12.0sp"
+              android:textColor="#de000000"
+              android:gravity="center_vertical"
+              android:id="@id/tv_versionName"
+              android:paddingLeft="4.0dp"
+              android:paddingTop="2.0dp"
+              android:layout_width="0.0dp"
+              android:layout_height="fill_parent"
+              android:text="V3000"
+              android:layout_weight="1.0" />
+    <ImageView android:layout_width="wrap_content"
+               android:layout_height="wrap_content"
+               kingdraw:srcCompat="@drawable/ic_arrow_drop_up" />
+  </LinearLayout>
+  <View android:background="#d9d9d9"
+        android:layout_width="fill_parent"
+        android:layout_height="0.5dp" />
+</LinearLayout>

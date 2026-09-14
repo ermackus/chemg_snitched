@@ -1,0 +1,46 @@
+<?xml version='1.0' encoding='utf-8' ?>
+<RelativeLayout android:background="@android:color/transparent"
+                android:layout_width="fill_parent"
+                android:layout_height="fill_parent" xmlns:android="http://schemas.android.com/apk/res/android">
+  <androidx.viewpager.widget.ViewPager android:id="@id/pager"
+                        android:layout_width="fill_parent"
+                        android:layout_height="fill_parent" />
+  <TextView android:textSize="14.0sp"
+            android:textColor="@color/white"
+            android:gravity="center"
+            android:id="@id/tv_skip"
+            android:background="@drawable/boot_page"
+            android:paddingLeft="8.0dp"
+            android:paddingTop="2.0dp"
+            android:paddingRight="8.0dp"
+            android:paddingBottom="2.0dp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="20.0dp"
+            android:layout_marginRight="10.0dp"
+            android:text="@string/guide_boot_page_skip"
+            android:layout_alignParentRight="true" />
+  <RelativeLayout android:background="@android:color/transparent"
+                  android:layout_width="fill_parent"
+                  android:layout_height="wrap_content"
+                  android:layout_marginBottom="8.0dp"
+                  android:layout_above="@id/btn_done">
+    <LinearLayout android:orientation="horizontal"
+                  android:id="@id/circles"
+                  android:layout_width="wrap_content"
+                  android:layout_height="wrap_content"
+                  android:layout_centerInParent="true" />
+  </RelativeLayout>
+  <Button android:textSize="16.0sp"
+          android:textColor="#ff5f91e7"
+          android:id="@id/btn_done"
+          android:background="@drawable/guide_btn"
+          android:visibility="invisible"
+          android:layout_width="180.0dp"
+          android:layout_height="48.0dp"
+          android:layout_marginBottom="28.0dp"
+          android:text="@string/guide_go"
+          android:layout_alignParentBottom="true"
+          android:layout_centerHorizontal="true"
+          android:textAllCaps="true" />
+</RelativeLayout>

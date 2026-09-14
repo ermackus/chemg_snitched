@@ -1,0 +1,52 @@
+<?xml version='1.0' encoding='utf-8' ?>
+<FrameLayout android:orientation="horizontal"
+             android:background="@drawable/bg_rect_rectangle_white"
+             android:layout_width="fill_parent"
+             android:layout_height="wrap_content"
+             android:layout_margin="8.0dp" xmlns:android="http://schemas.android.com/apk/res/android" xmlns:kingdraw="http://schemas.android.com/apk/res-auto">
+  <ImageView android:id="@id/img_news"
+             android:layout_width="wrap_content"
+             android:layout_height="wrap_content"
+             android:contentDescription="@string/user_img"
+             kingdraw:srcCompat="@0x7f08012d" />
+  <com.goodsrc.ui.library.widget.RoundAndCircleImageView android:id="@id/iv_user_head"
+                        android:layout_width="36.0dp"
+                        android:layout_height="36.0dp"
+                        android:layout_margin="8.0dp"
+                        android:contentDescription="@string/user_img"
+                        kingdraw:srcCompat="@0x7f080130" />
+  <LinearLayout android:orientation="vertical"
+                android:layout_width="fill_parent"
+                android:layout_height="fill_parent"
+                android:layout_marginLeft="50.0dp"
+                android:layout_marginRight="10.0dp"
+                android:layout_marginBottom="10.0dp"
+                android:layout_marginStart="50.0dp"
+                android:layout_marginEnd="10.0dp">
+    <TextView android:textSize="14.0sp"
+              android:textStyle="bold"
+              android:textColor="@color/black"
+              android:id="@id/tv_feedback_user"
+              android:layout_width="wrap_content"
+              android:layout_height="wrap_content"
+              android:layout_marginTop="8.0dp" />
+    <TextView android:textSize="10.0sp"
+              android:textColor="#999999"
+              android:id="@id/tv_feedback_time"
+              android:layout_width="wrap_content"
+              android:layout_height="wrap_content"
+              android:layout_marginTop="3.0dp" />
+    <TextView android:textSize="12.0sp"
+              android:textColor="#333333"
+              android:ellipsize="end"
+              android:id="@id/tv_feedback_content"
+              android:layout_width="wrap_content"
+              android:layout_height="wrap_content"
+              android:layout_marginTop="5.0dp"
+              android:maxLines="2" />
+    <com.kingagroot.kingdraw.widget.FeedBackPicView android:id="@id/fpv_img"
+                          android:layout_width="fill_parent"
+                          android:layout_height="wrap_content"
+                          android:layout_marginTop="8.0dp" />
+  </LinearLayout>
+</FrameLayout>

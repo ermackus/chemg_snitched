@@ -1,0 +1,11 @@
+<?xml version='1.0' encoding='utf-8' ?>
+<com.goodsrc.ui.library.widget.SquareLayout android:gravity="center"
+                      android:id="@id/ll_content"
+                      android:descendantFocusability="beforeDescendants"
+                      android:layout_width="36.0dp"
+                      android:layout_height="36.0dp" xmlns:android="http://schemas.android.com/apk/res/android" xmlns:kingdraw="http://schemas.android.com/apk/res-auto">
+  <ImageView android:id="@id/img_item"
+             android:layout_width="28.0dp"
+             android:layout_height="28.0dp"
+             kingdraw:srcCompat="@drawable/ic_benzene" />
+</com.goodsrc.ui.library.widget.SquareLayout>

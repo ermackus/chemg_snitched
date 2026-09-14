@@ -1,0 +1,32 @@
+<?xml version='1.0' encoding='utf-8' ?>
+<vector android:height="44.0dp"
+        android:width="44.0dp"
+        android:viewportWidth="44.0"
+        android:viewportHeight="44.0" xmlns:android="http://schemas.android.com/apk/res/android">
+  <path android:fillColor="#4df6c914"
+        android:pathData="M22,22m-22,0a22,22 0,1 1,44 0a22,22 0,1 1,-44 0"
+        android:strokeColor="#00000000" />
+  <path android:fillColor="#00000000"
+        android:pathData="M22,22m-21.5,0a21.5,21.5 0,1 1,43 0a21.5,21.5 0,1 1,-43 0"
+        android:strokeColor="#f6c914"
+        android:strokeWidth="1.0" />
+  <group>
+    <clip-path android:pathData="M8,7h28v28h-28z" />
+    <path android:fillColor="#e6bb0e"
+          android:pathData="M35.609,17.879 L21.999,27.706 8.386,17.879 21.999,8.052Z" />
+    <path android:fillColor="#e5ecff"
+          android:pathData="M12.105,9.778L31.893,9.778v24.17L12.105,33.948Z" />
+    <path android:fillColor="#fff"
+          android:pathData="M16.593,12.871L27.402,12.871L27.402,13.978L16.593,13.978Z" />
+    <path android:fillColor="#fff"
+          android:pathData="M14.262,16.43L29.739,16.43v0.52L14.262,16.95ZM14.262,17.312L29.739,17.312v0.52L14.262,17.832ZM14.262,18.194L29.739,18.194v0.52L14.262,18.714ZM14.262,19.076L29.739,19.076v0.52L14.262,19.596Z" />
+    <path android:fillColor="#fff"
+          android:pathData="M14.262,19.834L29.739,19.834v0.52L14.262,20.354ZM14.262,20.716L29.739,20.716v0.52L14.262,21.236ZM14.262,21.598L29.739,21.598v0.52L14.262,22.118ZM14.262,22.48L29.739,22.48v0.52L14.262,23Z" />
+    <path android:fillColor="#fff"
+          android:pathData="M14.262,23.237L29.739,23.237v0.52L14.262,23.757ZM14.262,24.119L29.739,24.119v0.52L14.262,24.639ZM14.262,25.001L29.739,25.001v0.52L14.262,25.521ZM14.262,25.883L29.739,25.883v0.52L14.262,26.403Z" />
+    <path android:fillColor="#f6c914"
+          android:pathData="M8.386,33.945L35.609,33.945L35.609,17.879L21.999,27.706 8.386,17.879Z" />
+    <path android:fillColor="#f5d847"
+          android:pathData="M8.386,33.948L35.609,33.948L24.482,25.915L19.517,25.915Z" />
+  </group>
+</vector>

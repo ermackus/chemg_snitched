@@ -1,0 +1,25 @@
+<?xml version='1.0' encoding='utf-8' ?>
+<LinearLayout android:orientation="vertical"
+              android:layout_width="fill_parent"
+              android:layout_height="fill_parent" xmlns:android="http://schemas.android.com/apk/res/android" xmlns:kingdraw="http://schemas.android.com/apk/res-auto">
+  <ImageView android:layout_gravity="center"
+             android:id="@id/imageView"
+             android:layout_width="wrap_content"
+             android:layout_height="wrap_content"
+             android:layout_marginTop="60.0dp"
+             kingdraw:srcCompat="@drawable/ic_login_logo_cicle" />
+  <com.google.android.material.tabs.TabLayout android:layout_gravity="center"
+                        android:id="@id/tab_layout"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="10.0dp"
+                        kingdraw:tabIndicatorColor="#ffe13e3f"
+                        kingdraw:tabIndicatorFullWidth="false"
+                        kingdraw:tabMode="auto"
+                        kingdraw:tabSelectedTextColor="#ffe13e3f"
+                        kingdraw:tabTextAppearance="@android:style/TextAppearance.Widget.TabWidget"
+                        kingdraw:tabTextColor="#ff999999" />
+  <androidx.viewpager.widget.ViewPager android:id="@id/vp_login"
+                        android:layout_width="fill_parent"
+                        android:layout_height="fill_parent" />
+</LinearLayout>

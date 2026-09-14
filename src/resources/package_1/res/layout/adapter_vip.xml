@@ -1,0 +1,19 @@
+<?xml version='1.0' encoding='utf-8' ?>
+<RelativeLayout android:layout_width="fill_parent"
+                android:layout_height="fill_parent" xmlns:android="http://schemas.android.com/apk/res/android">
+  <TextView android:gravity="center"
+            android:id="@id/tv_vip_title"
+            android:layout_width="wrap_content"
+            android:layout_height="40.0dp"
+            android:text="TextView"
+            android:layout_centerVertical="true"
+            android:layout_marginStart="10.0dp" />
+  <TextView android:gravity="center"
+            android:id="@id/tv_vip_price"
+            android:layout_width="wrap_content"
+            android:layout_height="40.0dp"
+            android:text="price"
+            android:layout_centerVertical="true"
+            android:layout_marginEnd="10.0dp"
+            android:layout_alignParentEnd="true" />
+</RelativeLayout>

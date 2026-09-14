@@ -1,0 +1,42 @@
+<?xml version='1.0' encoding='utf-8' ?>
+<RelativeLayout android:layout_width="fill_parent"
+                android:layout_height="fill_parent" xmlns:android="http://schemas.android.com/apk/res/android" xmlns:kingdraw="http://schemas.android.com/apk/res-auto">
+  <LinearLayout android:orientation="horizontal"
+                android:id="@id/ll_toolbar_company"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginRight="20.0dp"
+                android:layout_centerVertical="true"
+                android:layout_toStartOf="@id/toolbar_right_text">
+    <com.google.android.material.imageview.ShapeableImageView android:id="@id/toolbar_logo_icon"
+                          android:visibility="visible"
+                          android:layout_width="30.0dp"
+                          android:layout_height="30.0dp"
+                          kingdraw:shapeAppearanceOverlay="@style/roundedCornerImageStyle"
+                          kingdraw:srcCompat="@drawable/ic_logo_def" />
+    <TextView android:textSize="14.0sp"
+              android:textColor="@color/black"
+              android:ellipsize="end"
+              android:gravity="center"
+              android:id="@id/toolbar_title_icon"
+              android:layout_width="wrap_content"
+              android:layout_height="fill_parent"
+              android:layout_marginLeft="10.0dp"
+              android:lines="1" />
+    <ImageView android:layout_gravity="center"
+               android:id="@id/toolbar_down_icon"
+               android:visibility="visible"
+               android:layout_width="wrap_content"
+               android:layout_height="wrap_content"
+               kingdraw:srcCompat="@drawable/ic_arrow_drop_down" />
+  </LinearLayout>
+  <TextView android:textSize="14.0sp"
+            android:textColor="@color/main_red"
+            android:id="@id/toolbar_right_text"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginRight="20.0dp"
+            android:text="@string/manager"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true" />
+</RelativeLayout>

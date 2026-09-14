@@ -1,0 +1,52 @@
+<?xml version='1.0' encoding='utf-8' ?>
+<FrameLayout android:orientation="vertical"
+             android:layout_width="fill_parent"
+             android:layout_height="fill_parent" xmlns:android="http://schemas.android.com/apk/res/android" xmlns:kingdraw="http://schemas.android.com/apk/res-auto">
+  <androidx.constraintlayout.widget.ConstraintLayout android:layout_width="fill_parent"
+                        android:layout_height="fill_parent">
+    <androidx.camera.view.PreviewView android:id="@id/previewView"
+                          android:layout_width="fill_parent"
+                          android:layout_height="fill_parent" />
+    <com.king.zxing.ViewfinderView android:id="@id/viewfinderView"
+                          android:layout_width="fill_parent"
+                          android:layout_height="fill_parent"
+                          kingdraw:cornerColor="@color/colorPrimary"
+                          kingdraw:frameColor="@color/colorPrimary"
+                          kingdraw:labelTextLocation="bottom"
+                          kingdraw:labelTextSize="14.0sp"
+                          kingdraw:laserColor="@color/colorAccent"
+                          kingdraw:laserStyle="grid" />
+    <ImageView android:id="@id/ivFlashlight"
+               android:layout_width="wrap_content"
+               android:layout_height="wrap_content"
+               android:layout_marginTop="160.0dp"
+               android:src="@drawable/flash_selected_selector"
+               kingdraw:layout_constraintBottom_toBottomOf="parent"
+               kingdraw:layout_constraintLeft_toLeftOf="parent"
+               kingdraw:layout_constraintRight_toRightOf="parent"
+               kingdraw:layout_constraintTop_toTopOf="parent" />
+  </androidx.constraintlayout.widget.ConstraintLayout>
+  <LinearLayout android:gravity="center"
+                android:orientation="horizontal"
+                android:layout_width="fill_parent"
+                android:layout_height="50.0dp">
+    <ImageButton android:id="@id/ibt_back"
+                 android:background="@android:color/transparent"
+                 android:paddingLeft="14.0dp"
+                 android:paddingRight="14.0dp"
+                 android:layout_width="wrap_content"
+                 android:layout_height="fill_parent"
+                 android:src="@0x7f080165" />
+    <TextView android:textSize="18.0sp"
+              android:textColor="@color/white"
+              android:gravity="center|start"
+              android:layout_gravity="center_horizontal"
+              android:id="@id/tvTitle"
+              android:layout_width="0.0dp"
+              android:layout_height="fill_parent"
+              android:text="@string/scan"
+              android:singleLine="true"
+              android:layout_weight="1.0"
+              android:paddingStart="15.0dp" />
+  </LinearLayout>
+</FrameLayout>

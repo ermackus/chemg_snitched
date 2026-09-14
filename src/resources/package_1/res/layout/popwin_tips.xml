@@ -1,0 +1,13 @@
+<?xml version='1.0' encoding='utf-8' ?>
+<androidx.constraintlayout.widget.ConstraintLayout android:background="@0x7f0803b3"
+                      android:layout_width="wrap_content"
+                      android:layout_height="wrap_content" xmlns:android="http://schemas.android.com/apk/res/android">
+  <TextView android:textSize="11.0sp"
+            android:textColor="@color/white"
+            android:padding="10.0dp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_margin="10.0dp"
+            android:maxWidth="280.0dp"
+            android:text="@string/tips_cloud_help" />
+</androidx.constraintlayout.widget.ConstraintLayout>
